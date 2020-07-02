@@ -10,8 +10,38 @@ html {
   font-size: 62.5%;
 }
 
-.logo {
-  font-size: 3.5rem;
+body {
+  overflow-x: hidden;
+  overscroll-behavior-x: none;
+  overscroll-behavior-y: none;
+}
+
+.pickboxx-logo {
+  width: 25rem;
+  height: 9rem;
+}
+
+.header-flex {
+  /* border: solid black 1px; */
+  display: inline-block;
+}
+
+.header-flex a {
+  position: relative;
+  bottom: 30px;
+  left: 200px;
+  margin-right: 50px;
+  /* padding-right: 50px; */
+  font-size: 2rem;
+  text-decoration: none;
+  color: rgb(77, 73, 73);
+}
+
+.header-flex a:hover{
+  background-color: rgba(77, 73, 73, 0.5);
+  border-radius: 50px;
+  padding: 5px;
+  position: static;
 }
 
 .boxx-array {
