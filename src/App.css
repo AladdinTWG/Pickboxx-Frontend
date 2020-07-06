@@ -1,19 +1,11 @@
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
-}
-
 html {
   font-size: 62.5%;
 }
 
 body {
   overflow-x: hidden;
-  overscroll-behavior-x: none;
   overscroll-behavior-y: none;
+  overscroll-behavior-x: none;
 }
 
 .pickboxx-logo {
@@ -23,17 +15,20 @@ body {
 
 .header-flex {
   border: solid black 1px;
-  display: inline-block;
+  display: flex;
+  justify-content: space-evenly;
+  position: absolute;
   width: 100vw;
 }
 
 .header-flex a {
+  text-align: center;
+  display: inline-block;
   position: relative;
-  bottom: 30px;
-  left: 170px;
-  margin-right: 50px;
+  top: 30px;
   padding: 10px;
   font-size: 1.5rem;
+  height: 20px;
   text-decoration: none;
   background-color: transparent;
   color: rgb(77, 73, 73);
@@ -45,13 +40,23 @@ body {
   padding: 10px;
 }
 
+.profile-icon{
+  position: relative;
+  top: 20px;
+  width: 50px;
+  height: 50px;
+}
+
 .boxx-search-div {
   padding: 10px 0 10px 0;
+  display: block;
 }
 
 .boxx-search {
-  margin-left: 460px;
-  width: 35vw;
+  position: absolute;
+  top: 100px;
+  left: 33.2%;
+  width: 500px;
   height: 30px;
   border-radius: 50px;
   padding-left: 10px;
@@ -68,9 +73,12 @@ input:focus{
 }
 
 .boxx-nav {
-  margin-top: 10px;
+  position: absolute;
+  top: 150px;
+  left: 33.7%;
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  text-align: center;
 }
 
 .boxx-nav a {
@@ -81,6 +89,8 @@ input:focus{
   text-align: center;
   padding: 10px;
   margin-right: 10px;
+  float: left;
+  display: block;
 }
 
 .boxx-nav a:hover {
@@ -89,10 +99,12 @@ input:focus{
 
 .boxx-array {
   display: grid;
+  box-sizing: border-box;
   grid-template-columns: repeat(auto-fill, 40vw);
   position: relative;
-  left: 250px;
-  top: 100px;
+  left: 270px;
+  top: 300px;
+  text-align: center;
 }
 
 .boxx-container {
@@ -102,11 +114,14 @@ input:focus{
 
 .boxx {
   border: solid black 1px;
+  position: absolute;
   width: 300px;
   height: 300px;
 }
 
 .post-info {
+  position: relative;
+  top: 300px;
   display: flex;
   flex-direction: row;
 }
@@ -122,4 +137,23 @@ input:focus{
   border: solid black 1px;
   width: 45px;
   height: 45px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .pickboxx-logo {
+    width: 18rem;
+    height: 6rem;
+  }
+
+  .header-flex a{
+    position: relative;
+    top: 15px;
+  }
+
+  .profile-icon{
+    position: relative;
+    bottom: 30px;
+    width: 30px;
+    height: 30px;
+  }
 }
