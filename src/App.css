@@ -4,7 +4,6 @@ html {
 
 body {
   overflow-x: hidden;
-  overscroll-behavior-y: none;
   overscroll-behavior-x: none;
 }
 
@@ -137,6 +136,37 @@ input:focus{
   border: solid black 1px;
   width: 45px;
   height: 45px;
+}
+
+.boxx-details{
+  display: flex;
+  flex-direction: column;
+}
+
+.boxx-details__image{
+  border: solid black 1px;
+  position: absolute;
+  width: 700px;
+  height: 500px;
+  top: 205px;
+  left: 200px;
+}
+
+.boxx-details__comments{
+  border: solid black 1px;
+  width: 350px;
+  height: 510px;
+  position: absolute;
+  left: 902px;
+  top: 200px
+}
+
+.boxx-details__profile{
+  border-right: solid black 1px;
+  border-bottom: solid black 1px;
+  position: absolute;
+  width: 100px;
+  height: 100px;
 }
 
 @media only screen and (max-width: 1000px) {

@@ -1,14 +1,16 @@
 import React, { Component } from "react";
 import "./App.css";
-import { Route, Link} from "react-router-dom";
+import { Route, Link } from "react-router-dom";
 import Home from "./components/Home.js";
 import TopBoxxes from "./components/TopBoxxes.js";
+import BoxxDetails from "./components/BoxxDetails.js";
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {};
   }
+
   render() {
     return (
       <div className="App">
@@ -35,11 +37,14 @@ class App extends Component {
           </div>
         </div>
         <Route exact path="/">
-        <Home/>
+          <Home />
         </Route>
-          <Route exact path="/TopBoxxes">
-            <TopBoxxes />
-          </Route>
+        <Route exact path="/TopBoxxes">
+          <TopBoxxes />
+        </Route>
+        <Route exact path="/BoxxDetails">
+          <BoxxDetails />
+        </Route>
       </div>
     );
   }
