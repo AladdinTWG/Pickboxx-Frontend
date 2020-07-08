@@ -5,6 +5,7 @@ import Home from "./components/Home.js";
 import TopBoxxes from "./components/TopBoxxes.js";
 import BoxxDetails from "./components/BoxxDetails.js";
 import Explore from "./components/Explore.js";
+import Leaderboards from "./components/Leaderboards.js"
 
 class App extends Component {
   constructor(props) {
@@ -21,7 +22,7 @@ class App extends Component {
           <Link to="/explore">Explore</Link>
           <Link>Marketplace</Link>
           <Link>Map</Link>
-          <Link>Leaderboards</Link>
+          <Link to="/leaderboards">Leaderboards</Link>
           <img
             className="profile-icon"
             src="https://www.greenecountyfoundation.org/wp-content/uploads/2019/09/Profile-Icon.png"
@@ -42,6 +43,9 @@ class App extends Component {
         </Route>
         <Route exact path="/explore">
           <Explore />
+        </Route>
+        <Route exact path="/leaderboards">
+          <Leaderboards/>
         </Route>
         <Route exact path="/TopBoxxes">
           <TopBoxxes />
