@@ -17,7 +17,7 @@ class App extends Component {
         <div className="header-flex">
           <img className="pickboxx-logo" src={"../Logo.jpeg"} alt="" />
           <Link to="/">Home</Link>
-          <Link>Explore</Link>
+          <Link to="/explore">Explore</Link>
           <Link>Marketplace</Link>
           <Link>Map</Link>
           <Link>Leaderboards</Link>
@@ -38,6 +38,9 @@ class App extends Component {
         </div>
         <Route exact path="/">
           <Home />
+        </Route>
+        <Route exact path="/explore">
+          <Explore />
         </Route>
         <Route exact path="/TopBoxxes">
           <TopBoxxes />
