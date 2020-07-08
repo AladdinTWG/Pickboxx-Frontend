@@ -4,6 +4,7 @@ import { Route, Link } from "react-router-dom";
 import Home from "./components/Home.js";
 import TopBoxxes from "./components/TopBoxxes.js";
 import BoxxDetails from "./components/BoxxDetails.js";
+import Explore from "./components/Explore.js";
 
 class App extends Component {
   constructor(props) {
