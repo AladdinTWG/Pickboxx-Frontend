@@ -45,7 +45,7 @@ function Leaderboards() {
                 src="https://www.greenecountyfoundation.org/wp-content/uploads/2019/09/Profile-Icon.png"
                 alt=""
               />
-              <input className="boxx-comment" placeholder="caption"></input>
+              <input className="boxx-description" placeholder="caption"></input>
             </div>
           </div>
           <div className="boxx-container">
@@ -56,7 +56,7 @@ function Leaderboards() {
                 src="https://www.greenecountyfoundation.org/wp-content/uploads/2019/09/Profile-Icon.png"
                 alt=""
               />
-              <input className="boxx-comment" placeholder="caption"></input>
+              <input className="boxx-description" placeholder="caption"></input>
             </div>
           </div>
           <div className="boxx-container">
@@ -67,7 +67,7 @@ function Leaderboards() {
                 src="https://www.greenecountyfoundation.org/wp-content/uploads/2019/09/Profile-Icon.png"
                 alt=""
               />
-              <input className="boxx-comment" placeholder="caption"></input>
+              <input className="boxx-description" placeholder="caption"></input>
             </div>
           </div>
           <div className="boxx-container">
@@ -78,7 +78,7 @@ function Leaderboards() {
                 src="https://www.greenecountyfoundation.org/wp-content/uploads/2019/09/Profile-Icon.png"
                 alt=""
               />
-              <input className="boxx-comment" placeholder="caption"></input>
+              <input className="boxx-description" placeholder="caption"></input>
             </div>
           </div>
           <div className="boxx-container">
@@ -89,7 +89,7 @@ function Leaderboards() {
                 src="https://www.greenecountyfoundation.org/wp-content/uploads/2019/09/Profile-Icon.png"
                 alt=""
               />
-              <input className="boxx-comment" placeholder="caption"></input>
+              <input className="boxx-description" placeholder="caption"></input>
             </div>
           </div>
           <div className="boxx-container">
@@ -100,7 +100,7 @@ function Leaderboards() {
                 src="https://www.greenecountyfoundation.org/wp-content/uploads/2019/09/Profile-Icon.png"
                 alt=""
               />
-              <input className="boxx-comment" placeholder="caption"></input>
+              <input className="boxx-description" placeholder="caption"></input>
             </div>
           </div>
           <div className="boxx-container">
@@ -111,7 +111,7 @@ function Leaderboards() {
                 src="https://www.greenecountyfoundation.org/wp-content/uploads/2019/09/Profile-Icon.png"
                 alt=""
               />
-              <input className="boxx-comment" placeholder="caption"></input>
+              <input className="boxx-description" placeholder="caption"></input>
             </div>
           </div>
         </div>

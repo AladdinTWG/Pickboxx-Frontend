@@ -2,9 +2,23 @@ html {
   font-size: 62.5%;
 }
 
+html,
 body {
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+}
+
+body {
+  position: relative;
+  overscroll-behavior: contain;
   overflow-x: hidden;
-  overscroll-behavior-x: none;
+}
+
+div#viewport {
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 
 .pickboxx-logo {
@@ -39,7 +53,7 @@ body {
   padding: 10px;
 }
 
-.profile-icon{
+.profile-icon {
   position: relative;
   top: 20px;
   width: 50px;
@@ -67,7 +81,7 @@ body {
   margin-left: 20px;
 } */
 
-input:focus{
+input:focus {
   outline: none;
 }
 
@@ -106,6 +120,29 @@ input:focus{
   text-align: center;
 }
 
+.duels .boxx-array{
+  display: grid;
+  grid-template-columns: repeat(2, 21vw);
+  position: absolute;
+  left: 400px;
+}
+
+.boxx{
+  position: relative;
+}
+
+.boxx-img{
+  width: 300px;
+  height: 300px;
+}
+
+.expand{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 279px;
+}
+
 .boxx-container {
   width: 400px;
   height: 400px;
@@ -125,11 +162,11 @@ input:focus{
   flex-direction: row;
 }
 
-.boxx-comment {
+.boxx-description {
   margin-top: 10px;
-  margin-left: 2px;
   height: 20px;
   width: 250px;
+  margin-left: 3px;
 }
 
 .profile-comment {
@@ -138,13 +175,23 @@ input:focus{
   height: 45px;
 }
 
-.boxx-details{
+.rank{
+  margin-left: 100px;
+  padding-left: 20px;
+}
+
+.rank div{
+  text-align: center;
+  margin-right: 100px;
+}
+
+.boxx-details {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
-.boxx-details__image{
+.boxx-details__image {
   border: solid black 1px;
   position: relative;
   width: 700px;
@@ -152,69 +199,107 @@ input:focus{
   top: 205px;
 }
 
-.boxx-details__comments{
+.full-boxx-desc{
+  margin-left: 2px;
+  height: 100px;
+  font-size: 1.3rem;
+}
+
+.boxx-profile-and-name {
+  opacity: 0;
+}
+
+.boxx-profile-and-name:hover {
+  opacity: 1;
+}
+
+.boxx-details__comments {
   border: solid black 1px;
   width: 350px;
   height: 510px;
   position: relative;
-  top: 200px
+  top: 200px;
 }
 
-.boxx-details__profile{
-  border-right: solid black 1px;
-  border-bottom: solid black 1px;
+.boxx-details__profile {
   position: absolute;
   width: 100px;
   height: 100px;
+  z-index: 1;
 }
 
-.boxx-details__post{
+.product-name{
+  position: absolute;
+  left: 100px;
+  background-color: black;
+  color:white;
+  font-size: 2rem;
+  border-radius: 100px;
+  padding: 5px;
+}
+
+.boxx-details__post {
   position: absolute;
   z-index: -1;
-  left: 15%;
-  width: 500px;
+  /* left: 15%; */
+  width: 700px;
   height: 500px;
 }
 
-.boxx-details__comments{
+.boxx-details__comments {
   display: flex;
   flex-direction: column;
 }
 
-.boxx-details__comments-single{
+.boxx-details__comments-single {
   display: flex;
   flex-direction: row;
 }
 
-.boxx-details__profile-comment{
+.comment-string{
+  margin-left: 2px;
+}
+
+.boxx-details__profile-comment {
   border: solid black 1px;
   width: 40px;
   height: 40px;
 }
 
-.leaderboards-page{
+.leaderboard-header{
+  position: relative;
+  /* bottom: 50px; */
+  left: 15px;
+}
+
+.leaderboards-page {
   display: flex;
   flex-direction: row;
 }
 
 .leaderboards {
-  border: solid black 1px;
   margin-left: 20px;
   font-size: large;
   width: 180px;
-  height: 600px;
+  height: 690px;
   margin-top: 200px;
 }
 
 .rank {
-  margin-left: 30px;
-  
+  border: solid black 1px;
+  margin-left: 10px;
+  padding-left: 35px;
 }
 .userposition {
   margin-bottom: 20px;
 }
 
-.boxx-column{
+.full-leaderboard-link{
+  font-size: 1rem;
+  margin-left: 30px;
+}
+
+.boxx-column {
   display: grid;
   grid-template-columns: repeat(1);
   position: absolute;
@@ -228,34 +313,39 @@ input:focus{
     height: 6rem;
   }
 
-  .header-flex a{
+  .header-flex a {
     position: relative;
     top: 15px;
   }
 
-  .profile-icon{
+  .profile-icon {
     position: relative;
     bottom: 30px;
     width: 30px;
     height: 30px;
   }
 
-  .boxx-search{
+  .boxx-search {
     position: relative;
     top: 70px;
     left: 33.2% auto;
   }
 
-  .boxx-nav{
+  .boxx-nav {
     position: relative;
     top: 80px;
   }
 
-  .boxx-details__image{
+  .boxx-details__image {
     top: 90px;
   }
 
-  .boxx-details__comments{
+  .boxx-details__comments {
     top: 85px;
+  }
+
+  .boxx-array {
+    display: grid;
+    grid-template-columns: repeat(1, 20vw);
   }
 }

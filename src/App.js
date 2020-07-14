@@ -5,7 +5,8 @@ import Home from "./components/Home.js";
 import TopBoxxes from "./components/TopBoxxes.js";
 import BoxxDetails from "./components/BoxxDetails.js";
 import Explore from "./components/Explore.js";
-import Leaderboards from "./components/Leaderboards.js"
+import Leaderboards from "./components/Leaderboards.js";
+import Duels from "./components/Duels.js";
 
 class App extends Component {
   constructor(props) {
@@ -33,8 +34,8 @@ class App extends Component {
           <input className="boxx-search" type="text"></input>
           <div className="boxx-nav">
             <Link>#somethingPopular</Link>
-            <Link to="TopBoxxes">Top Boxxes</Link>
-            <Link>Duels</Link>
+            <Link to="/topboxxes">Top Boxxes</Link>
+            <Link to="/duels">Duels</Link>
             <Link>Top Pickers</Link>
           </div>
         </div>
@@ -47,8 +48,11 @@ class App extends Component {
         <Route exact path="/leaderboards">
           <Leaderboards/>
         </Route>
-        <Route exact path="/TopBoxxes">
+        <Route exact path="/topboxxes">
           <TopBoxxes />
+        </Route>
+        <Route exact path="/duels">
+        <Duels/>
         </Route>
         <Route exact path="/BoxxDetails">
           <BoxxDetails />
