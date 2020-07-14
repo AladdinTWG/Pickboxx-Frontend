@@ -1,3 +1,4 @@
+
 html {
   font-size: 62.5%;
 }
@@ -221,6 +222,92 @@ input:focus{
   top: 31%;
   left: 40%;
 }
+.toppickercontainer {
+    border: solid, 1px, black;
+  }
+  .followbutton{
+    position: absolute;
+    right: 0%;
+  }
+  .userinfo{
+    position: absolute;
+    font-size: medium;
+    left: 40%;
+    top: 10%;
+    text-align: left;
+  }
+  .usericon{
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    border: solid black 1px;
+    border-radius: 100%;
+  }
+  .profile-pic {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .dropdown {
+    position: absolute;
+    left: 12%;
+    top: 35%;
+  }
+  
+  .dropdown-toggle{
+    width: 50px;
+    height: 20px;
+    color: black;
+    background-color: transparent;
+  }
+
+  .toppickerboxx{
+    border: solid black 1px;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+  }
+  .toppickercontainer{
+    width: 400px;
+    height: 400px;
+  }
+  .nav_user_btn{
+    background-color: transparent;
+    height: 10px;
+    border: 0px;
+    top: 5%;
+  }
+  .dropdown-toggle.btn.btn-primary{
+    position: relative;
+    border: none;
+    background-color: transparent;
+    font-size: 10px;
+  }
+  .dropdown-menu{
+  }
+  .dropdown-item{
+    left: 0%;
+    background-color: transparent;
+    border: solid, 0.5px, black;
+  }
+  .item_image{
+    height: 50px;
+    width: 50px;
+  }
+  .picker_item{
+    position: absolute;
+    top:45%;
+    left: 25%;
+  }
+  .toppicker_array{
+    display: grid;
+    box-sizing: border-box;
+    grid-template-columns: repeat(auto-fill, 40vw);
+    position: relative;
+    left: 100px;
+    top: 50px;
+    text-align: center;
+  }
 
 @media only screen and (max-width: 1000px) {
   .pickboxx-logo {
