@@ -120,23 +120,87 @@ input:focus {
   text-align: center;
 }
 
-.duels .boxx-array{
-  display: grid;
-  grid-template-columns: repeat(2, 21vw);
-  position: absolute;
-  left: 400px;
+.duels {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+  right: 10%;
 }
 
-.boxx{
+.duels .boxx{
+  margin-left: 19%;
+}
+
+.duel-profile-comment {
+  width: 50px;
+  height: 50px;
+  border: solid black 1px;
+  position: absolute;
+  right: 83%;
+}
+
+.duel-profile-comment-mirror {
+  width: 50px;
+  height: 50px;
+  border: solid black 1px;
+  position: absolute;
+  left: 83%;
+}
+
+.bracket-icon {
+  width: 30px;
+  height: 30px;
+  border: solid black 1px;
+  border-radius: 100px;
+  position: absolute;
+  top: 75%;
+  right: 89%;
+}
+
+.bracket-icon-mirror {
+  width: 30px;
+  height: 30px;
+  border: solid black 1px;
+  border-radius: 100px;
+  position: absolute;
+  top: 75%;
+  left: 89%;
+}
+
+.duel-checkbox{
+  position: absolute;
+  top: 90%;
+  right: 92%;
+}
+
+.duel-checkbox-mirror{
+  position: absolute;
+  top: 90%;
+  left: 92%;
+}
+
+.prompt{
+  display: inline;
+  position: absolute;
+  margin: 0;
+  right: 39%;
+  margin-top: 21.2%;
+  font-size: 1.5rem;
+  background-color: rgba(77, 73, 73, 0.3);
+  padding: 4px 315px 5px 9px;
+}
+
+.boxx {
   position: relative;
 }
 
-.boxx-img{
+.boxx-img {
   width: 300px;
   height: 300px;
 }
 
-.expand{
+.expand {
   position: absolute;
   width: 20px;
   height: 20px;
@@ -149,6 +213,13 @@ input:focus {
 }
 
 .boxx {
+  border: solid black 1px;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+}
+
+.boxx-mirror {
   border: solid black 1px;
   position: absolute;
   width: 300px;
@@ -175,12 +246,12 @@ input:focus {
   height: 45px;
 }
 
-.rank{
+.rank {
   margin-left: 100px;
   padding-left: 20px;
 }
 
-.rank div{
+.rank div {
   text-align: center;
   margin-right: 100px;
 }
@@ -199,7 +270,7 @@ input:focus {
   top: 205px;
 }
 
-.full-boxx-desc{
+.full-boxx-desc {
   margin-left: 2px;
   height: 100px;
   font-size: 1.3rem;
@@ -228,11 +299,11 @@ input:focus {
   z-index: 1;
 }
 
-.product-name{
+.product-name {
   position: absolute;
   left: 100px;
   background-color: black;
-  color:white;
+  color: white;
   font-size: 2rem;
   border-radius: 100px;
   padding: 5px;
@@ -256,7 +327,7 @@ input:focus {
   flex-direction: row;
 }
 
-.comment-string{
+.comment-string {
   margin-left: 2px;
 }
 
@@ -266,7 +337,7 @@ input:focus {
   height: 40px;
 }
 
-.leaderboard-header{
+.leaderboard-header {
   position: relative;
   /* bottom: 50px; */
   left: 15px;
@@ -294,7 +365,7 @@ input:focus {
   margin-bottom: 20px;
 }
 
-.full-leaderboard-link{
+.full-leaderboard-link {
   font-size: 1rem;
   margin-left: 30px;
 }
