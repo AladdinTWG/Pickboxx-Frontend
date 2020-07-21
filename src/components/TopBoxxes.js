@@ -1,8 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Header from "./header";
 
 function Top_boxxes() {
   return (
+    <div>
+      <Header />
+    
     <div className="top-boxxes">
       <div className="boxx-array">
         <div className="boxx-container">
@@ -60,7 +64,8 @@ function Top_boxxes() {
           </div>
         </div>
       </div>
-    </div>
+      </div>
+      </div>
   );
 }
 

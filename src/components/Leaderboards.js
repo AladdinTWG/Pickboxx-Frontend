@@ -1,7 +1,10 @@
 import React from "react";
-
+import Hedaer from "./header";
 function Leaderboards() {
   return (
+    <div>
+      <Hedaer />
+    
     <div className="leaderboards-page">
       <div className="leaderboards">
         <ol className="rank">
@@ -116,7 +119,8 @@ function Leaderboards() {
           </div>
         </div>
       </div>
-    </div>
+      </div>
+      </div>
   );
 }
 

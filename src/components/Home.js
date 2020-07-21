@@ -1,7 +1,11 @@
 import React from 'react';
+import Header from "./header";
 
 function Home() {
-    return(
+  return (
+    <div>
+      <Header />
+    
         <div className="home">
         <div className="boxx-array">
           <div className="boxx-container">
@@ -33,6 +37,7 @@ function Home() {
             </div>
           </div>
         </div>
+      </div>
       </div>
     )
 }

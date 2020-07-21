@@ -1,8 +1,12 @@
 import React from "react";
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import Header from "./header";
 
 function Explore() {
   return (
+    <div>
+      <Header />
+    
       <div className="explore">
     <div className="boxx-array">
       <div className="boxx-container">
@@ -60,7 +64,8 @@ function Explore() {
         </div>
       </div>
     </div>
-    </div>
+      </div>
+      </div>
   );
 }
 

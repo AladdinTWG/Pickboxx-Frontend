@@ -27,9 +27,7 @@ class TopPicker extends Component {
     render() { 
         
         return ( 
-            <div className="toppicker">
-                <div className = "boxx-array">
-                    <div className="toppickercontainer" >
+                    
                         <div className="toppickerboxx">
                             <button className="followbutton" onClick={this.followhandle}>
                                 {
@@ -43,9 +41,9 @@ class TopPicker extends Component {
                                 />
                             </div>
                             <DropdownButton id="dropdown-item-button" className="more_info" title="...">
-                                <Dropdown.Item as="button">Action</Dropdown.Item>
-                                <Dropdown.Item as="button">Another action</Dropdown.Item>
-                                <Dropdown.Item as="button">Something else</Dropdown.Item>
+                                <Dropdown.Item className ="dropdowns" as="button">Action</Dropdown.Item>
+                                <Dropdown.Item className ="dropdowns" as="button">Another action</Dropdown.Item>
+                                <Dropdown.Item className ="dropdowns" as="button">Something else</Dropdown.Item>
                             </DropdownButton>
                         
                             <div className="userinfo">
@@ -117,9 +115,9 @@ class TopPicker extends Component {
                             
                             
                         </div>
-                    </div>
-                </div>
-            </div>
+                    
+                
+            
          );
     }
 }
