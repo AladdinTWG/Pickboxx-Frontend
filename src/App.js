@@ -7,6 +7,8 @@ import BoxxDetails from "./components/BoxxDetails.js";
 import Explore from "./components/Explore.js";
 import Leaderboards from "./components/Leaderboards.js"
 import TopPickerPage from "../../pickboxx-frontend/src/components/TopPickerPage";
+import LoginPage from "./components/login.js";
+import DropdownButton from "./components/dropdownbutton";
 class App extends Component {
   constructor(props) {
     super(props);
@@ -16,31 +18,6 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="header-flex">
-          <img className="pickboxx-logo" src={"../Logo.jpeg"} alt="" />
-          <Link to="/">Home</Link>
-          <Link to="/explore">Explore</Link>
-          <Link>Marketplace</Link>
-          <Link>Map</Link>
-          <Link to="/leaderboards">Leaderboards</Link>
-          <button className = "nav_user_btn">
-            <img
-              className="profile-icon"
-              src="https://www.greenecountyfoundation.org/wp-content/uploads/2019/09/Profile-Icon.png"
-              alt=""
-            />
-          </button>
-          
-        </div>
-        <div className="boxx-search-div">
-          <input className="boxx-search" type="text"></input>
-          <div className="boxx-nav">
-            <Link>#somethingPopular</Link>
-            <Link to="TopBoxxes">Top Boxxes</Link>
-            <Link>Duels</Link>
-            <Link to="/TopPickers">Top Pickers</Link>
-          </div>
-        </div>
         <Route exact path="/">
           <Home />
         </Route>
@@ -56,8 +33,11 @@ class App extends Component {
         <Route exact path="/BoxxDetails">
           <BoxxDetails />
         </Route>
-        <Route exact path="/TopPickers">
+        <Route exact path="/TopPickerPage">
           <TopPickerPage />
+        </Route>
+        <Route exact path="/login">
+          <LoginPage />
         </Route>
       </div>
     );

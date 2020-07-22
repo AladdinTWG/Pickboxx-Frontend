@@ -18,10 +18,11 @@ body {
   display: flex;
   justify-content: space-evenly;
   position: absolute;
-  width: 100vw;
+  width: 105vw;
 }
 
-.header-flex a {
+
+.header-flex a.navbutton{
   text-align: center;
   display: inline-block;
   position: relative;
@@ -34,7 +35,7 @@ body {
   color: rgb(77, 73, 73);
 }
 
-.header-flex a:hover {
+.header-flex a.navbutton:hover {
   background-color: rgba(77, 73, 73, 0.5);
   border-radius: 50px;
   padding: 10px;
@@ -45,6 +46,10 @@ body {
   top: 20px;
   width: 50px;
   height: 50px;
+}
+.login_option li{
+  list-style-type : '';
+  
 }
 
 .boxx-search-div {
@@ -222,7 +227,14 @@ input:focus{
   top: 31%;
   left: 40%;
 }
+
 .toppickercontainer {
+    display: grid;
+    box-sizing: border-box;
+    grid-template-columns: repeat(auto-fill, 40vw );
+    position: relative;
+    top: 300px;
+    left: 20%;
     border: solid, 1px, black;
   }
   .followbutton{
@@ -253,6 +265,10 @@ input:focus{
     left: 12%;
     top: 35%;
   }
+  .dropdowns{
+    float: left;
+    
+  }
   
   .dropdown-toggle{
     width: 50px;
@@ -263,19 +279,28 @@ input:focus{
 
   .toppickerboxx{
     border: solid black 1px;
-    position: absolute;
+    position: relative;
     width: 300px;
     height: 300px;
+    margin-bottom: 20px;
+    margin-right: 20px;
   }
-  .toppickercontainer{
-    width: 400px;
-    height: 400px;
-  }
+  
+
+
   .nav_user_btn{
+    background-image: url("https://www.greenecountyfoundation.org/wp-content/uploads/2019/09/Profile-Icon.png");
+    background-repeat: no-repeat;
+    background-size: 40px 40px;
+    display: inline-block;
+    position: relative;
+    top: 30px;
+    height: 40px;
+    padding-left: 10px;
+    padding-right: 35px;
     background-color: transparent;
-    height: 10px;
-    border: 0px;
-    top: 5%;
+    border: none;
+    outline:none;
   }
   .dropdown-toggle.btn.btn-primary{
     position: relative;
@@ -283,8 +308,7 @@ input:focus{
     background-color: transparent;
     font-size: 10px;
   }
-  .dropdown-menu{
-  }
+  
   .dropdown-item{
     left: 0%;
     background-color: transparent;
@@ -299,14 +323,41 @@ input:focus{
     top:45%;
     left: 25%;
   }
+  
+
   .toppicker_array{
     display: grid;
     box-sizing: border-box;
     grid-template-columns: repeat(auto-fill, 40vw);
     position: relative;
-    left: 100px;
-    top: 50px;
+    left: 20%;
+    top: 20%;
     text-align: center;
+  }
+  .login_panel{
+    position: absolute;
+    top: 200px;
+    left: 40%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+  }
+  .login_logo{
+    width: 25rem;
+    height: 9rem;
+    margin-bottom: 10px;
+  }
+  .username_input{
+    width: 269px;
+    height: 30px;
+    margin-bottom: 10px;
+  }
+  .google_login{
+    
+  }
+  .twitter_login{
+   
   }
 
 @media only screen and (max-width: 1000px) {
@@ -320,6 +371,10 @@ input:focus{
     top: 15px;
   }
 
+  .nav_user_btn{
+    position: relative;
+    top: 15px;
+  }
   .profile-icon{
     position: relative;
     bottom: 30px;
@@ -345,4 +400,5 @@ input:focus{
   .boxx-details__comments{
     top: 85px;
   }
+  
 }
