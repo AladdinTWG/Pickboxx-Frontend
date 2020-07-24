@@ -124,13 +124,21 @@ input:focus {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+}
+
+.duels .boxx-array{
   position: relative;
-  right: 9%;
+  margin-right: 10%;
 }
 
 .duels .boxx{
   position: absolute;
-  left: 18.8%;
+  left: 12.5%;
+}
+
+.duels .boxx-mirror{
+  position: absolute;
+  right: 41%;
 }
 
 .duel-profile-comment {
@@ -254,6 +262,11 @@ input:focus {
   height: 300px;
 }
 
+.desc-and-comments{
+  display: flex;
+  flex-direction: column;
+}
+
 .post-info {
   position: relative;
   top: 300px;
@@ -272,6 +285,36 @@ input:focus {
   border: solid black 1px;
   width: 45px;
   height: 45px;
+}
+
+.comment-profile-icon{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 70%;
+  right: 78%
+}
+
+.desc-comment{
+  position: absolute;
+  top: 70%;
+  right: 52%;
+  text-align: left;
+}
+
+.second-comment-profile-icon{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 130%;
+  right: 78%
+}
+
+.second-desc-comment{
+  position: absolute;
+  top: 130%;
+  right: 47%;
+  text-align: left;
 }
 
 .rank {
