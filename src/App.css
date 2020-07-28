@@ -513,6 +513,7 @@ input:focus {
   display: inline-block;
   position: relative;
   top: 30px;
+  right: 30px;
   height: 40px;
   padding-left: 10px;
   padding-right: 35px;
@@ -567,14 +568,14 @@ input:focus {
 
 .login_option{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   position: absolute;
-  left: 80%;
-  bottom: 50%;
+  left: 100%;
+  bottom: 70%;
 }
 
-.login_option li{
-  list-style-type: none;
+.login_option a{
+  font-size: 1.3rem;
 }
 
 .username_input {
@@ -584,7 +585,27 @@ input:focus {
 }
 
 .google_login{
-  width: 267px;
+  background-color: red !important;
+  width: 283px;
+  border-radius: 0 !important;
+  border: none !important;
+}
+
+.google_login div{
+  padding: 15px 17px 15px 16px !important;
+  border-radius: 0 !important;
+  background-color: darkred !important;
+}
+
+.google_login span{
+  color: white;
+  font-size: 1.7rem;
+  font-weight: bold !important;
+}
+
+.twitter_login svg{
+  width: 260px !important;
+  border: none !important;
 }
 
 .line{
@@ -607,6 +628,15 @@ input:focus {
 
 .options-text{
   background-color: white;
+}
+
+.metro{
+  padding: 18px 23px 18px 0px !important;
+}
+
+.fa-facebook::before{
+  background-color: #3f528b;
+  padding: 20px 20px 20px 20px;
 }
 
 @media only screen and (max-width: 1000px) {

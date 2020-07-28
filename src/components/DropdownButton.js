@@ -6,7 +6,7 @@ class DropdownButton extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      isVisible: false,
+      isVisible: true,
     };
     this.handleClick = this.handleClick.bind(this);
   }
@@ -29,8 +29,8 @@ class DropdownButton extends Component {
     return (
       <button
         className="nav_user_btn"
-        onClick={(e) => this.handleClick(e)}
-        tabIndex="1"
+        // onClick={(e) => this.handleClick(e)}
+        // tabIndex="1"
       >
         {this.state.isVisible ? this.renderDropdowns() : null}
       </button>

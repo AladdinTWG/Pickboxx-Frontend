@@ -51,11 +51,14 @@ class LoginPage extends Component {
           </button>
         </form>
         <span className="line">
-        <h3><span>Or Sign Up Using</span></h3>
+          <h3>
+            <span>Or Sign Up Using</span>
+          </h3>
         </span>
 
         <div>
           <FacebookLoginWithButton
+            className="facebook-login"
             appId="1206715649505081"
             fields="name,email,picture"
             onClick={componentClicked}
@@ -67,7 +70,7 @@ class LoginPage extends Component {
           <GoogleLogin
             className="google_login"
             clientId="658977310896-knrl3gka66fldh83dao2rhgbblmd4un9.apps.googleusercontent.com"
-            buttonText="Login"
+            buttonText="LOGIN WITH GOOGLE"
             onSuccess={responseGoogle}
             onFailure={responseGoogle}
             cookiePolicy={"single_host_origin"}
