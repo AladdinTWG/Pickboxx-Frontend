@@ -8,6 +8,7 @@ import Explore from "./components/Explore.js";
 import Leaderboards from "./components/Leaderboards.js";
 import Duels from "./components/Duels.js";
 import SomethingPopular from "./components/SomethingPopular.js"
+import TopPicker from "./components/TopPicker.js";
 
 class App extends Component {
   constructor(props) {
@@ -37,7 +38,7 @@ class App extends Component {
             <Link to="/somethingPopular">#somethingPopular</Link>
             <Link to="/topboxxes">Top Boxxes</Link>
             <Link to="/duels">Duels</Link>
-            <Link>Top Pickers</Link>
+            <Link to="/toppicker">Top Pickers</Link>
           </div>
         </div>
         <Route exact path="/">
@@ -60,6 +61,9 @@ class App extends Component {
         </Route>
         <Route exact path="/BoxxDetails">
           <BoxxDetails />
+        </Route>
+        <Route exact path="/TopPicker">
+          <TopPicker />
         </Route>
       </div>
     );

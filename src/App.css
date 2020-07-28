@@ -126,17 +126,17 @@ input:focus {
   justify-content: flex-start;
 }
 
-.duels .boxx-array{
+.duels .boxx-array {
   position: relative;
   margin-right: 10%;
 }
 
-.duels .boxx{
+.duels .boxx {
   position: absolute;
   left: 12.5%;
 }
 
-.duels .boxx-mirror{
+.duels .boxx-mirror {
   position: absolute;
   right: 41%;
 }
@@ -177,19 +177,19 @@ input:focus {
   left: 89%;
 }
 
-.duel-checkbox{
+.duel-checkbox {
   position: absolute;
   top: 90%;
   right: 92%;
 }
 
-.duel-checkbox-mirror{
+.duel-checkbox-mirror {
   position: absolute;
   top: 90%;
   left: 92%;
 }
 
-.prompt{
+.prompt {
   display: inline;
   position: absolute;
   margin: 0;
@@ -200,7 +200,7 @@ input:focus {
   padding: 4px 315px 5px 9px;
 }
 
-.duel-vote-comment{
+.duel-vote-comment {
   width: 20px;
   height: 20px;
   border: solid black 1px;
@@ -214,18 +214,17 @@ input:focus {
   flex-direction: column;
 }
 
-.single-duel-comment{
+.single-duel-comment {
   display: flex;
   flex-direction: row;
   align-items: baseline;
 }
 
-.duel-comment-p{
+.duel-comment-p {
   position: absolute;
   left: 150%;
   bottom: 1%;
 }
-
 
 .boxx {
   position: relative;
@@ -262,7 +261,7 @@ input:focus {
   height: 300px;
 }
 
-.desc-and-comments{
+.desc-and-comments {
   display: flex;
   flex-direction: column;
 }
@@ -287,30 +286,30 @@ input:focus {
   height: 45px;
 }
 
-.comment-profile-icon{
+.comment-profile-icon {
   width: 30px;
   height: 30px;
   position: absolute;
   top: 70%;
-  right: 78%
+  right: 78%;
 }
 
-.desc-comment{
+.desc-comment {
   position: absolute;
   top: 70%;
   right: 52%;
   text-align: left;
 }
 
-.second-comment-profile-icon{
+.second-comment-profile-icon {
   width: 30px;
   height: 30px;
   position: absolute;
   top: 130%;
-  right: 78%
+  right: 78%;
 }
 
-.second-desc-comment{
+.second-desc-comment {
   position: absolute;
   top: 130%;
   right: 47%;
@@ -448,6 +447,129 @@ input:focus {
   top: 31%;
   left: 40%;
 }
+
+.toppickercontainer {
+  display: grid;
+  box-sizing: border-box;
+  grid-template-columns: repeat(auto-fill, 40vw);
+  position: relative;
+  top: 300px;
+  left: 20%;
+  border: solid, 1px, black;
+}
+.followbutton {
+  position: absolute;
+  right: 0%;
+}
+.userinfo {
+  position: absolute;
+  font-size: medium;
+  left: 40%;
+  top: 10%;
+  text-align: left;
+}
+.usericon {
+  position: absolute;
+  left: 10%;
+  top: 10%;
+  border: solid black 1px;
+  border-radius: 100%;
+}
+.profile-pic {
+  width: 60px;
+  height: 60px;
+}
+
+.dropdown {
+  position: absolute;
+  left: 12%;
+  top: 35%;
+}
+.dropdowns {
+  float: left;
+}
+
+.dropdown-toggle {
+  width: 50px;
+  height: 20px;
+  color: black;
+  background-color: transparent;
+}
+
+.toppickerboxx {
+  border: solid black 1px;
+  display: grid;
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.nav_user_btn {
+  background-image: url("https://www.greenecountyfoundation.org/wp-content/uploads/2019/09/Profile-Icon.png");
+  background-repeat: no-repeat;
+  background-size: 40px 40px;
+  display: inline-block;
+  position: relative;
+  top: 30px;
+  height: 40px;
+  padding-left: 10px;
+  padding-right: 35px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+.dropdown-toggle.btn.btn-primary {
+  position: relative;
+  border: none;
+  background-color: transparent;
+  font-size: 10px;
+}
+
+.dropdown-item {
+  left: 0%;
+  background-color: transparent;
+  border: solid, 0.5px, black;
+}
+.item_image {
+  height: 50px;
+  width: 50px;
+}
+.picker_item {
+  position: absolute;
+  top: 45%;
+  left: 25%;
+}
+
+.toppicker_array {
+  display: grid;
+  box-sizing: border-box;
+  grid-template-columns: repeat(auto-fill, 40vw);
+  position: relative;
+  left: 20%;
+  top: 20%;
+  text-align: center;
+}
+.login_panel {
+  position: absolute;
+  top: 200px;
+  left: 40%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.login_logo {
+  width: 25rem;
+  height: 9rem;
+  margin-bottom: 10px;
+}
+.username_input {
+  width: 269px;
+  height: 30px;
+  margin-bottom: 10px;
+}
+
 
 @media only screen and (max-width: 1000px) {
   .pickboxx-logo {

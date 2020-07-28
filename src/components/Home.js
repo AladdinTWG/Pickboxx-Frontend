@@ -51,6 +51,12 @@ function Home() {
                 alt=""
               />
               <p className="boxx-description">Enjoying that fresh fizzy soda</p>
+              <img
+                className="comment-profile-icon"
+                src="https://www.greenecountyfoundation.org/wp-content/uploads/2019/09/Profile-Icon.png"
+                alt=""
+              />
+              <p className="desc-comment">@user123 awesome!</p>
             </div>
           </div>
           <div className="boxx-container">
@@ -64,6 +70,12 @@ function Home() {
                 alt=""
               />
               <p className="boxx-description">I'm aboutta "bounce"....get it??</p>
+              <img
+                className="comment-profile-icon"
+                src="https://www.greenecountyfoundation.org/wp-content/uploads/2019/09/Profile-Icon.png"
+                alt=""
+              />
+              <p className="desc-comment">@user123 Lol I get it!</p>
             </div>
           </div>
           <div className="boxx-container">
@@ -77,50 +89,12 @@ function Home() {
                 alt=""
               />
               <p className="boxx-description">This pizza is fire... and ON fire!</p>
-            </div>
-          </div>
-          <div className="boxx-container">
-            <div className="boxx"></div>
-            <div className="post-info">
               <img
-                className="profile-comment"
+                className="comment-profile-icon"
                 src="https://www.greenecountyfoundation.org/wp-content/uploads/2019/09/Profile-Icon.png"
                 alt=""
               />
-              <input className="boxx-description" placeholder="caption"></input>
-            </div>
-          </div>
-          <div className="boxx-container">
-            <div className="boxx"></div>
-            <div className="post-info">
-              <img
-                className="profile-comment"
-                src="https://www.greenecountyfoundation.org/wp-content/uploads/2019/09/Profile-Icon.png"
-                alt=""
-              />
-              <input className="boxx-description" placeholder="caption"></input>
-            </div>
-          </div>
-          <div className="boxx-container">
-            <div className="boxx"></div>
-            <div className="post-info">
-              <img
-                className="profile-comment"
-                src="https://www.greenecountyfoundation.org/wp-content/uploads/2019/09/Profile-Icon.png"
-                alt=""
-              />
-              <input className="boxx-description" placeholder="caption"></input>
-            </div>
-          </div>
-          <div className="boxx-container">
-            <div className="boxx"></div>
-            <div className="post-info">
-              <img
-                className="profile-comment"
-                src="https://www.greenecountyfoundation.org/wp-content/uploads/2019/09/Profile-Icon.png"
-                alt=""
-              />
-              <input className="boxx-description" placeholder="caption"></input>
+              <p className="desc-comment">@user123 Ight relax...</p>
             </div>
           </div>
         </div>
