@@ -1,10 +1,10 @@
 import React from "react";
 import TopPicker from "./TopPicker";
-import Header from "./header";
+// import Header from "./header";
 function TopPickerPage() {
   return (
     <div>
-      <Header />
+      {/* <Header /> */}
 
       <div className="toppickercontainer">
         <TopPicker name="User 1" score="100" position="1" />

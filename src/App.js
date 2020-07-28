@@ -8,7 +8,7 @@ import Explore from "./components/Explore.js";
 import Leaderboards from "./components/Leaderboards.js";
 import Duels from "./components/Duels.js";
 import SomethingPopular from "./components/SomethingPopular.js"
-import TopPickerPage from "./components/TopPicker.js";
+import TopPickerPage from "./components/TopPickerPage.js";
 
 class App extends Component {
   constructor(props) {
