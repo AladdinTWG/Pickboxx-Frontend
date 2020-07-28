@@ -1,8 +1,10 @@
 import React from "react";
+import Header from "./Header.js";
 
 function Duels() {
   return (
     <div className="duels">
+      <Header />
       <div className="boxx-array">
         <div className="boxx-container">
           <div className="boxx">

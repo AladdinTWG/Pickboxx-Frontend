@@ -1,9 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Header from "./Header.js";
 
 function Top_boxxes() {
   return (
     <div className="top-boxxes">
+      <Header/>
       <div className="boxx-array">
         <div className="boxx-container">
           <div className="boxx">

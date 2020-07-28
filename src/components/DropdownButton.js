@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { findAllByTestId } from "@testing-library/react";
-import { Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 class DropdownButton extends Component {
   constructor(props) {
@@ -18,14 +18,10 @@ class DropdownButton extends Component {
   }
   renderDropdowns() {
     return (
-      <ul className="login_option">
-        <li>
-          <Link to="/login">Login</Link>
-        </li>
-        <li>
-          <Link to="/login">Sign Up</Link>
-        </li>
-      </ul>
+      <div className="login_option">
+        <Link to="/login">Login</Link>
+        <Link to="/login">Sign Up</Link>
+      </div>
     );
   }
 

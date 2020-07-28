@@ -1,8 +1,10 @@
 import React from "react";
+import Header from "./Header.js";
 
 function BoxxDetails() {
   return (
     <div className="boxx-details">
+    <Header/>
       <div className="boxx-details__image">
         <div className="boxx-profile-and-name">
         <img

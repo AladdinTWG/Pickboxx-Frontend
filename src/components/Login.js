@@ -50,6 +50,9 @@ class LoginPage extends Component {
             Login
           </button>
         </form>
+        <span className="line">
+        <h3><span>Or Sign Up Using</span></h3>
+        </span>
 
         <div>
           <FacebookLoginWithButton
@@ -60,7 +63,7 @@ class LoginPage extends Component {
             icon="fa-facebook"
           />
         </div>
-        <div>
+        <div className="google-login-button">
           <GoogleLogin
             className="google_login"
             clientId="658977310896-knrl3gka66fldh83dao2rhgbblmd4un9.apps.googleusercontent.com"
@@ -70,7 +73,7 @@ class LoginPage extends Component {
             cookiePolicy={"single_host_origin"}
           />
         </div>
-        <div>
+        <div className="twitter-login-button">
           <TwitterLogin
             className="twitter_login"
             authCallback={responseTwitter}

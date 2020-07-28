@@ -1,8 +1,10 @@
 import React from "react";
+import Header from "./Header.js";
 
 function Leaderboards() {
   return (
     <div className="leaderboards-page">
+      <Header />
       <div className="leaderboards">
         <ol className="rank">
           <li className="userposition">

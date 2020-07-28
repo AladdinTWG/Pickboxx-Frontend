@@ -9,6 +9,8 @@ import Leaderboards from "./components/Leaderboards.js";
 import Duels from "./components/Duels.js";
 import SomethingPopular from "./components/SomethingPopular.js"
 import TopPickerPage from "./components/TopPickerPage.js";
+import DropdownButton from "./components/DropdownButton.js";
+import Login from "./components/Login.js";
 
 class App extends Component {
   constructor(props) {
@@ -19,13 +21,14 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="header-flex">
+        {/* <div className="header-flex">
           <img className="pickboxx-logo" src={"../Logo.jpeg"} alt="" />
           <Link to="/">Home</Link>
           <Link to="/explore">Explore</Link>
           <Link>Marketplace</Link>
           <Link>Map</Link>
           <Link to="/leaderboards">Leaderboards</Link>
+          <DropdownButton />
           <img
             className="profile-icon"
             src="https://www.greenecountyfoundation.org/wp-content/uploads/2019/09/Profile-Icon.png"
@@ -40,7 +43,7 @@ class App extends Component {
             <Link to="/duels">Duels</Link>
             <Link to="/TopPickerPage">Top Pickers</Link>
           </div>
-        </div>
+        </div> */}
         <Route exact path="/">
           <Home />
         </Route>
@@ -64,6 +67,9 @@ class App extends Component {
         </Route>
         <Route exact path="/TopPickerPage">
           <TopPickerPage />
+        </Route>
+        <Route exact path="/login">
+          <Login/>
         </Route>
       </div>
     );

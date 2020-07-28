@@ -1,9 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Header from "./Header.js";
 
 function Home() {
   return (
     <div className="home">
+      <Header/>
       <div className="leaderboards">
       <h5 className="leaderboard-header">24 Hour Leaderboard</h5>
         <ol className="rank">

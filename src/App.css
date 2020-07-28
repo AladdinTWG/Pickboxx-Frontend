@@ -553,7 +553,7 @@ input:focus {
 }
 .login_panel {
   position: absolute;
-  top: 200px;
+  top: 100px;
   left: 40%;
   display: flex;
   flex-direction: column;
@@ -564,10 +564,49 @@ input:focus {
   height: 9rem;
   margin-bottom: 10px;
 }
+
+.login_option{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 80%;
+  bottom: 50%;
+}
+
+.login_option li{
+  list-style-type: none;
+}
+
 .username_input {
   width: 269px;
   height: 30px;
   margin-bottom: 10px;
+}
+
+.google_login{
+  width: 267px;
+}
+
+.line{
+  display: block;
+  margin: 25px;
+}
+
+.line h3{
+  text-align: center;
+  border-bottom: solid black 1px;
+  position: relative;
+}
+
+.line h3 span{
+  background-color: white;
+  position: relative;
+  top: 5px;
+  padding: 0 9px;
+}
+
+.options-text{
+  background-color: white;
 }
 
 @media only screen and (max-width: 1000px) {
