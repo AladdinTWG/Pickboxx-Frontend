@@ -10,7 +10,7 @@ class Header extends Component {
                     <img className="pickboxx-logo" src={"../Logo.jpeg"} alt="" />
                     <Link className = "navbutton" to="/">Home</Link>
                     <Link className = "navbutton" to="/explore">Explore</Link>
-                    <Link className = "navbutton" >Marketplace</Link>
+                    <Link className = "navbutton" to="/marketplace">Marketplace</Link>
                     <Link className = "navbutton" >Map</Link>
                     <Link className = "navbutton" to="/leaderboards">Leaderboards</Link>
                     <DropdownButton />

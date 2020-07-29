@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import "./App.css";
 import { Route, Link } from "react-router-dom";
 import Home from "./components/Home.js";
@@ -9,6 +10,7 @@ import Leaderboards from "./components/Leaderboards.js"
 import TopPickerPage from "../../pickboxx-frontend/src/components/TopPickerPage";
 import LoginPage from "./components/login.js";
 import DropdownButton from "./components/dropdownbutton";
+import MarketPlace from "./components/marketplace";
 class App extends Component {
   constructor(props) {
     super(props);
@@ -38,6 +40,9 @@ class App extends Component {
         </Route>
         <Route exact path="/login">
           <LoginPage />
+        </Route>
+        <Route exact path = "/marketplace">
+          <MarketPlace />
         </Route>
       </div>
     );
