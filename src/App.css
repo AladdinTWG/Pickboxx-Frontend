@@ -589,6 +589,7 @@ input:focus {
   width: 283px;
   border-radius: 0 !important;
   border: none !important;
+  margin-top: 20px;
 }
 
 .google_login div{
@@ -634,9 +635,50 @@ input:focus {
   padding: 18px 23px 18px 0px !important;
 }
 
+.facebook-login{
+  border: none !important;
+}
+
 .fa-facebook::before{
   background-color: #3f528b;
   padding: 20px 20px 20px 20px;
+}
+
+.twitter-login-button svg rect{
+  border-radius: 0px !important;
+  width: 283px;
+}
+
+.twitter-login-button{
+  margin-top: 20px;
+}
+
+.twitter-button{
+  display: flex;
+  flex-direction: row;
+  background-color: #4fc5e1;
+  font-size: 1.7rem;
+  font-weight: bold;
+  height: 51px;
+  position: relative;
+  border: none;
+  width: 283px;
+  color: white;
+}
+
+.twitter-button p{
+  position: absolute;
+  left: 22%;
+}
+
+.fa-twitter::before{
+  position: absolute;
+  bottom: 1px;
+  right: 82%;
+  width: 18px;
+  height: 18px;
+  background-color: #3894b9;
+  padding: 14px 16px 18px 16px;
 }
 
 @media only screen and (max-width: 1000px) {
