@@ -9,8 +9,9 @@ import Leaderboards from "./components/Leaderboards.js";
 import Duels from "./components/Duels.js";
 import SomethingPopular from "./components/SomethingPopular.js"
 import TopPickerPage from "./components/TopPickerPage.js";
-import DropdownButton from "./components/DropdownButton.js";
+// import DropdownButton from "./components/DropdownButton.js";
 import Login from "./components/Login.js";
+import Marketplace from "./components/Marketplace.js";
 
 class App extends Component {
   constructor(props) {
@@ -70,6 +71,9 @@ class App extends Component {
         </Route>
         <Route exact path="/login">
           <Login/>
+        </Route>
+        <Route exact path="/marketplace">
+        <Marketplace/>
         </Route>
       </div>
     );

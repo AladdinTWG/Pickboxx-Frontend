@@ -569,7 +569,7 @@ input:focus {
   padding-right: 16px;
 }
 
-.login_option{
+.login_option {
   display: flex;
   flex-direction: row;
   position: absolute;
@@ -577,7 +577,7 @@ input:focus {
   bottom: 70%;
 }
 
-.login_option a{
+.login_option a {
   font-size: 1.3rem;
 }
 
@@ -587,7 +587,7 @@ input:focus {
   margin-bottom: 10px;
 }
 
-.google_login{
+.google_login {
   background-color: red !important;
   width: 283px;
   border-radius: 0 !important;
@@ -595,68 +595,68 @@ input:focus {
   margin-top: 20px;
 }
 
-.google_login div{
+.google_login div {
   padding: 15px 17px 15px 16px !important;
   border-radius: 0 !important;
   background-color: darkred !important;
 }
 
-.google_login span{
+.google_login span {
   color: white;
   font-size: 1.7rem;
   font-weight: bold !important;
 }
 
-.twitter_login svg{
+.twitter_login svg {
   width: 260px !important;
   border: none !important;
 }
 
-.line{
+.line {
   display: block;
   margin: 25px;
 }
 
-.line h3{
+.line h3 {
   text-align: center;
   border-bottom: solid black 1px;
   position: relative;
 }
 
-.line h3 span{
+.line h3 span {
   background-color: white;
   position: relative;
   top: 5px;
   padding: 0 9px;
 }
 
-.options-text{
+.options-text {
   background-color: white;
 }
 
-.metro{
+.metro {
   padding: 18px 23px 18px 0px !important;
 }
 
-.facebook-login{
+.facebook-login {
   border: none !important;
 }
 
-.fa-facebook::before{
+.fa-facebook::before {
   background-color: #3f528b;
   padding: 20px 20px 20px 20px;
 }
 
-.twitter-login-button svg rect{
+.twitter-login-button svg rect {
   border-radius: 0px !important;
   width: 283px;
 }
 
-.twitter-login-button{
+.twitter-login-button {
   margin-top: 20px;
 }
 
-.twitter-button{
+.twitter-button {
   display: flex;
   flex-direction: row;
   background-color: #4fc5e1;
@@ -669,12 +669,12 @@ input:focus {
   color: white;
 }
 
-.twitter-button p{
+.twitter-button p {
   position: absolute;
   left: 22%;
 }
 
-.fa-twitter::before{
+.fa-twitter::before {
   position: absolute;
   bottom: 1px;
   right: 82%;
@@ -682,6 +682,32 @@ input:focus {
   height: 18px;
   background-color: #3894b9;
   padding: 14px 16px 18px 16px;
+}
+
+.switch {
+  position: absolute;
+  top: 20%;
+  left: 42%;
+  width: 200px;
+  height: 40px;
+  border: 1px black solid;
+}
+.switch_btn {
+  background-color: transparent;
+  color: black;
+  border: none;
+  margin-top: 10px;
+  margin-left: 25px;
+}
+
+.filterbar {
+  position: fixed;
+  left: 1%;
+  top: 300px;
+  font-size: large;
+}
+.filteritem {
+  margin-bottom: 10px;
 }
 
 @media only screen and (max-width: 1000px) {
