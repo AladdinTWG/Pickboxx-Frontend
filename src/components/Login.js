@@ -82,7 +82,7 @@ class LoginPage extends Component {
             authCallback={responseTwitter}
             consumerSecret={responseTwitter}
             callbackUrl={"http://localhost:3000/login"}
-            children={<button className="twitter-button"><i class="fa fa-twitter" aria-hidden="true"></i><p>LOGIN WITH TWITTER</p></button>}
+            children={<button className="twitter-button"><i className="fa fa-twitter" aria-hidden="true"></i><p>LOGIN WITH TWITTER</p></button>}
           />
         </div>
       </div>

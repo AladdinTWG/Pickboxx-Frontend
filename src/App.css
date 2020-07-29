@@ -564,6 +564,9 @@ input:focus {
   width: 25rem;
   height: 9rem;
   margin-bottom: 10px;
+  border-bottom: solid black 1px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .login_option{
