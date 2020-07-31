@@ -44,6 +44,12 @@ function Home() {
         <div className="boxx-column">
           <div className="boxx-container">
             <div className="boxx">
+            <Link to="/boxxdetails">
+              <img
+                className="expand"
+                src="https://cdn.iconscout.com/icon/premium/png-256-thumb/expand-184-809607.png"
+              />
+            </Link>
               <img className="boxx-img" src="https://previews.123rf.com/images/dolgachov/dolgachov1904/dolgachov190401638/120809683-boy-in-red-t-shirt-drinking-soda-from-tin-can.jpg"/>
             </div>
             <div className="post-info">
@@ -63,6 +69,12 @@ function Home() {
           </div>
           <div className="boxx-container">
             <div className="boxx">
+            <Link to="/boxxdetails">
+              <img
+                className="expand"
+                src="https://cdn.iconscout.com/icon/premium/png-256-thumb/expand-184-809607.png"
+              />
+            </Link>
               <img className="boxx-img" src="https://ak.picdn.net/shutterstock/videos/20455645/thumb/10.jpg"/>
             </div>
             <div className="post-info">
@@ -82,6 +94,12 @@ function Home() {
           </div>
           <div className="boxx-container">
             <div className="boxx">
+            <Link to="/boxxdetails">
+              <img
+                className="expand"
+                src="https://cdn.iconscout.com/icon/premium/png-256-thumb/expand-184-809607.png"
+              />
+            </Link>
               <img className="boxx-img" src="https://d1yn1kh78jj1rr.cloudfront.net/image/preview/rDtN98Qoishumwih/graphicstock-happy-hungry-man-eating-pizza-from-a-box-isolated-on-white-background_HdGnKOiB3l_SB_PM.jpg"/>
             </div>
             <div className="post-info">

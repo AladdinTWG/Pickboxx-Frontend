@@ -12,6 +12,7 @@ import TopPickerPage from "./components/TopPickerPage.js";
 // import DropdownButton from "./components/DropdownButton.js";
 import Login from "./components/Login.js";
 import Marketplace from "./components/Marketplace.js";
+import Container from "./components/Container.js";
 
 class App extends Component {
   constructor(props) {
@@ -74,6 +75,9 @@ class App extends Component {
         </Route>
         <Route exact path="/marketplace">
         <Marketplace/>
+        </Route>
+        <Route exact path="/profile">
+        <Container/>
         </Route>
       </div>
     );
