@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
-import { Route, Link } from "react-router-dom";
+import { Route } from "react-router-dom";
 import Home from "./components/Home.js";
 import TopBoxxes from "./components/TopBoxxes.js";
 import BoxxDetails from "./components/BoxxDetails.js";
@@ -9,7 +9,6 @@ import Leaderboards from "./components/Leaderboards.js";
 import Duels from "./components/Duels.js";
 import SomethingPopular from "./components/SomethingPopular.js"
 import TopPickerPage from "./components/TopPickerPage.js";
-// import DropdownButton from "./components/DropdownButton.js";
 import Login from "./components/Login.js";
 import Marketplace from "./components/Marketplace.js";
 import Container from "./components/Container.js";

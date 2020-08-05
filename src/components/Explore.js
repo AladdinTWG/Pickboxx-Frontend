@@ -13,11 +13,13 @@ function Explore() {
               <img
                 className="expand"
                 src="https://cdn.iconscout.com/icon/premium/png-256-thumb/expand-184-809607.png"
+                alt=""
               />
             </Link>
             <img
               className="boxx-img"
               src="https://images.all-free-download.com/images/graphicthumb/climbing_motion_picture_167834.jpg"
+              alt=""
             />
           </div>
           <div className="post-info">
@@ -26,7 +28,9 @@ function Explore() {
               src="https://www.greenecountyfoundation.org/wp-content/uploads/2019/09/Profile-Icon.png"
               alt=""
             />
-            <p className="boxx-description">Picked up new hiking gear from the Hiking Shop!</p>
+            <p className="boxx-description">
+              Picked up new hiking gear from the Hiking Shop!
+            </p>
           </div>
         </div>
         <div className="boxx-container">
@@ -35,9 +39,14 @@ function Explore() {
               <img
                 className="expand"
                 src="https://cdn.iconscout.com/icon/premium/png-256-thumb/expand-184-809607.png"
+                alt=""
               />
             </Link>
-            <img className="boxx-img" src="https://ak.picdn.net/shutterstock/videos/17642746/thumb/5.jpg"/>
+            <img
+              className="boxx-img"
+              src="https://ak.picdn.net/shutterstock/videos/17642746/thumb/5.jpg"
+              alt=""
+            />
           </div>
           <div className="post-info">
             <img
@@ -45,7 +54,9 @@ function Explore() {
               src="https://www.greenecountyfoundation.org/wp-content/uploads/2019/09/Profile-Icon.png"
               alt=""
             />
-            <p className="boxx-description">I'm out with this new bike! Catch you on the road!</p>
+            <p className="boxx-description">
+              I'm out with this new bike! Catch you on the road!
+            </p>
           </div>
         </div>
         <div className="boxx-container">
@@ -54,6 +65,7 @@ function Explore() {
               <img
                 className="expand"
                 src="https://cdn.iconscout.com/icon/premium/png-256-thumb/expand-184-809607.png"
+                alt=""
               />
             </Link>
           </div>
@@ -72,6 +84,7 @@ function Explore() {
               <img
                 className="expand"
                 src="https://cdn.iconscout.com/icon/premium/png-256-thumb/expand-184-809607.png"
+                alt=""
               />
             </Link>
           </div>

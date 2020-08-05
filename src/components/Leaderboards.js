@@ -8,31 +8,31 @@ function Leaderboards() {
       <div className="leaderboards">
         <ol className="rank">
           <li className="userposition">
-            <img src="https://img.icons8.com/pastel-glyph/40/000000/user-male--v1.png" />
+            <img src="https://img.icons8.com/pastel-glyph/40/000000/user-male--v1.png" alt=""/>
             <div>user1</div>
           </li>
           <li className="userposition">
-            <img src="https://img.icons8.com/pastel-glyph/40/000000/user-male--v1.png" />
+            <img src="https://img.icons8.com/pastel-glyph/40/000000/user-male--v1.png" alt=""/>
             <div>user2</div>
           </li>
           <li className="userposition">
-            <img src="https://img.icons8.com/pastel-glyph/40/000000/user-male--v1.png" />
+            <img src="https://img.icons8.com/pastel-glyph/40/000000/user-male--v1.png" alt=""/>
             <div>user3</div>
           </li>
           <li className="userposition">
-            <img src="https://img.icons8.com/pastel-glyph/40/000000/user-male--v1.png" />
+            <img src="https://img.icons8.com/pastel-glyph/40/000000/user-male--v1.png" alt=""/>
             <div>user4</div>
           </li>
           <li className="userposition">
-            <img src="https://img.icons8.com/pastel-glyph/40/000000/user-male--v1.png" />
+            <img src="https://img.icons8.com/pastel-glyph/40/000000/user-male--v1.png" alt=""/>
             <div>user5</div>
           </li>
           <li className="userposition">
-            <img src="https://img.icons8.com/pastel-glyph/40/000000/user-male--v1.png" />
+            <img src="https://img.icons8.com/pastel-glyph/40/000000/user-male--v1.png" alt=""/>
             <div>user6</div>
           </li>
           <li className="userposition">
-            <img src="https://img.icons8.com/pastel-glyph/40/000000/user-male--v1.png" />
+            <img src="https://img.icons8.com/pastel-glyph/40/000000/user-male--v1.png" alt=""/>
             <div>user7</div>
           </li>
         </ol>

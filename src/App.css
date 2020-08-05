@@ -125,28 +125,36 @@ input:focus {
   text-align: center;
 }
 
-.duels {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
 .duels .boxx-array {
   position: relative;
   margin-right: 10%;
 }
 
-.duels .boxx {
+#box1 {
   position: absolute;
-  left: 12.5%;
+  left: 28.2%;
+  top: 40%;
 }
 
-.duels .boxx-mirror {
+#box2 {
   position: absolute;
-  right: 41%;
+  right: 30%;
+  top: 40%;
 }
 
-.duel-profile-comment {
+#box3{
+  position: absolute;
+  top: 100%;
+  left: 28.2%;
+}
+
+#box4{
+  position: absolute;
+  top: 100%;
+  right: 30%;
+}
+
+.duel-profile {
   width: 50px;
   height: 50px;
   border: solid black 1px;
@@ -154,13 +162,20 @@ input:focus {
   right: 83%;
 }
 
-.duel-profile-comment-mirror {
+.duel-profile-mirror {
   width: 50px;
   height: 50px;
   border: solid black 1px;
   position: absolute;
   left: 83%;
 }
+
+.duel-profile-comment{
+  width: 25px;
+  height: 25px;
+  margin-top: 50px;
+}
+
 
 .bracket-icon {
   width: 30px;
@@ -198,11 +213,15 @@ input:focus {
   display: inline;
   position: absolute;
   margin: 0;
-  right: 39%;
-  margin-top: 21.2%;
-  font-size: 1.5rem;
+  right: 0.5%;
+  font-weight: 900;
+  top: 100%;
+  width: 600px;
   background-color: rgba(77, 73, 73, 0.1);
-  padding: 4px 315px 5px 9px;
+}
+
+.prompt p{
+  margin-left: 10px;
 }
 
 .duel-vote-comment {
@@ -211,9 +230,9 @@ input:focus {
   border: solid black 1px;
 }
 
-.duel-comments {
+.duel-comments2 {
   position: absolute;
-  top: 42%;
+  top: 95%;
   left: 20%;
   display: flex;
   flex-direction: column;
@@ -223,7 +242,16 @@ input:focus {
   display: flex;
   flex-direction: row;
   align-items: baseline;
+  height: 40px;
+  position: relative;
+  right: 320%;
 }
+
+.single-duel-comment p{
+  position: relative;
+  bottom: 10px !important;
+}
+
 
 .duel-comment-p {
   position: absolute;
@@ -460,7 +488,6 @@ input:focus {
   position: relative;
   top: 300px;
   left: 20%;
-  border: solid, 1px, black;
 }
 .followbutton {
   position: absolute;
@@ -837,6 +864,20 @@ input:focus {
   /* margin: auto 0; */
 }
 
+.product-img{
+  width: 200px;
+  height: 200px
+}
+
+.boxx_info{
+  margin-top: 55%;
+  margin-right: 25%;
+}
+
+.boxx_info div{
+  margin-top: 5px;
+}
+
 
 
 @media only screen and (max-width: 1430px) {
@@ -850,12 +891,12 @@ input:focus {
     height: 250px;
   }
 
-  .duel-profile-comment {
+  .duel-profile {
     width: 40px;
     height: 40px;
   }
 
-  .duel-profile-comment-mirror {
+  .duel-profile-mirror {
     width: 40px;
     height: 40px;
   }

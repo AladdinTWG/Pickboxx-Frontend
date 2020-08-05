@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import DropdownButton from "./DropdownButton";
 function Header() {
   return (
@@ -13,7 +13,7 @@ function Header() {
           Explore
         </Link>
         <Link className="navbutton" to="/marketplace">Marketplace</Link>
-        <Link className="navbutton">Map</Link>
+        <Link className="navbutton" to="/map">Map</Link>
         <Link className="navbutton" to="/leaderboards">
           Leaderboards
         </Link>

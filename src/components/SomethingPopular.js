@@ -13,11 +13,13 @@ function somethingPopular() {
               <img
                 className="expand"
                 src="https://cdn.iconscout.com/icon/premium/png-256-thumb/expand-184-809607.png"
+                alt=''
               />
             </Link>
             <img
               className="boxx-img"
               src="https://images.all-free-download.com/images/graphicthumb/climbing_motion_picture_167834.jpg"
+              alt=''
             />
           </div>
           <div className="desc-and-comments">
@@ -51,11 +53,13 @@ function somethingPopular() {
               <img
                 className="expand"
                 src="https://cdn.iconscout.com/icon/premium/png-256-thumb/expand-184-809607.png"
+                alt=''
               />
             </Link>
             <img
               className="boxx-img"
               src="https://ak.picdn.net/shutterstock/videos/17642746/thumb/5.jpg"
+              alt=''
             />
           </div>
           <div className="post-info">
@@ -87,6 +91,7 @@ function somethingPopular() {
               <img
                 className="expand"
                 src="https://cdn.iconscout.com/icon/premium/png-256-thumb/expand-184-809607.png"
+                alt=''
               />
             </Link>
           </div>
@@ -117,6 +122,7 @@ function somethingPopular() {
               <img
                 className="expand"
                 src="https://cdn.iconscout.com/icon/premium/png-256-thumb/expand-184-809607.png"
+                alt=''
               />
             </Link>
           </div>
