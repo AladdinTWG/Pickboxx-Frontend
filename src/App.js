@@ -12,6 +12,7 @@ import TopPickerPage from "./components/TopPickerPage.js";
 import Login from "./components/Login.js";
 import Marketplace from "./components/Marketplace.js";
 import Container from "./components/Container.js";
+import LandingPage from "./components/LandingPage.js";
 
 class App extends Component {
   constructor(props) {
@@ -22,30 +23,10 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        {/* <div className="header-flex">
-          <img className="pickboxx-logo" src={"../Logo.jpeg"} alt="" />
-          <Link to="/">Home</Link>
-          <Link to="/explore">Explore</Link>
-          <Link>Marketplace</Link>
-          <Link>Map</Link>
-          <Link to="/leaderboards">Leaderboards</Link>
-          <DropdownButton />
-          <img
-            className="profile-icon"
-            src="https://www.greenecountyfoundation.org/wp-content/uploads/2019/09/Profile-Icon.png"
-            alt=""
-          />
-        </div>
-        <div className="boxx-search-div">
-          <input className="boxx-search" type="text"></input>
-          <div className="boxx-nav">
-            <Link to="/somethingPopular">#somethingPopular</Link>
-            <Link to="/topboxxes">Top Boxxes</Link>
-            <Link to="/duels">Duels</Link>
-            <Link to="/TopPickerPage">Top Pickers</Link>
-          </div>
-        </div> */}
         <Route exact path="/">
+        <LandingPage/>
+        </Route>
+        <Route exact path="/home">
           <Home />
         </Route>
         <Route exact path="/explore">
