@@ -890,12 +890,102 @@ input:focus {
   margin-top: 5px;
 }
 
+.landing-page {
+  text-align: center;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.info-container div {
+  width: 420px;
+}
+
+.info1 {
+  border-right: solid black 1px;
+  padding-right: 40px;
+}
+
+.sell {
+  font-size: 4rem;
+}
+
+.info1 p {
+  font-size: 1.5rem;
+}
+
+.info2 {
+  border-right: solid black 1px;
+  padding-right: 40px;
+}
+
+.info2 p {
+  font-size: 1.5rem;
+}
+
+.info3 p {
+  font-size: 1.5rem;
+}
+
+.demo-container {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.demo1 {
+  height: 300px;
+  width: 300px;
+  box-shadow: 5px 5px 15px;
+}
+
+.demo2 {
+  height: 300px;
+  width: 300px;
+  box-shadow: 5px 5px 15px;
+}
+
+.demo3 {
+  height: 300px;
+  width: 300px;
+  box-shadow: 5px 5px 15px;
+}
+
+.demo-img {
+  height: 300px;
+  width: 300px;
+}
+
+.join-now {
+  margin-top: 50px;
+  width: 200px;
+  height: 40px;
+  background-color: #4fc5e1;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  box-shadow: 5px 5px 15px;
+}
+
+.join-now:hover {
+  background-color: white;
+}
+
 
 
 @media only screen and (max-width: 1430px) {
   .duels .boxx {
     width: 250px;
     height: 250px;
+  }
+
+  .box1 {
+    width: 400px;
+    height: 400px;
   }
 
   .duels .boxx-mirror {
@@ -916,24 +1006,24 @@ input:focus {
 
 @media only screen and (max-width: 1000px) {
 
-  .duels .boxx-container {
-    width: 250px;
-    height: 250px;
-  }
+  /* .duels .boxx-container{
+  width: 400px;
+  height: 400px;
+} */
 
-  .duels .boxx-array {
-    grid-template-columns: repeat(2);
-  }
+  /* .duels .boxx-array{
+  grid-template-columns: repeat(2);
+} */
 
-  .duels .boxx {
+  /* .duels .boxx {
     width: 200px;
     height: 200px;
-  }
+  } */
 
-  .duels .boxx-mirror {
+  /* .duels .boxx-mirror {
     width: 200px;
     height: 200px;
-  }
+  } */
 
   .pickboxx-logo {
     width: 18rem;

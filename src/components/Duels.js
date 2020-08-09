@@ -5,8 +5,6 @@ function Duels() {
   return (
     <div className="duels">
       <Header />
-      {/* <div className="boxx-array"> */}
-      {/* <div className="boxx-container"> */}
       <div className="boxx" id="box1">
         <img
           className="duel-profile"
@@ -20,8 +18,6 @@ function Duels() {
         />
         <input className="duel-checkbox" type="checkbox" />
       </div>
-      {/* </div> */}
-      {/* <div className="boxx-container"> */}
       <div className="boxx" id="box2">
         <img
           className="duel-profile-mirror"
@@ -35,7 +31,7 @@ function Duels() {
         />
         <input className="duel-checkbox-mirror" type="checkbox" />
         <div className="prompt">
-          <p>Pick a side to lead to victory!</p>
+          <p>Check a side to lead them to victory!</p>
         </div>
         <div className="duel-comments2">
           <div className="single-duel-comment">
@@ -64,8 +60,6 @@ function Duels() {
           </div>
         </div>
       </div>
-      {/* </div> */}
-      {/* <div className="boxx-container"> */}
       <div className="boxx" id="box3">
         <img
           className="duel-profile"
@@ -79,8 +73,6 @@ function Duels() {
         />
         <input className="duel-checkbox" type="checkbox" />
       </div>
-      {/* </div> */}
-      {/* <div className="boxx-container"> */}
       <div className="boxx" id="box4">
         <img
           className="duel-profile-mirror"
@@ -94,7 +86,7 @@ function Duels() {
         />
         <input className="duel-checkbox-mirror" type="checkbox" />
         <div className="prompt">
-          <p>Pick a side to lead to victory!</p>
+          <p>Check a side to lead them to victory!</p>
         </div>
         <div className="duel-comments2">
           <div className="single-duel-comment">
@@ -123,8 +115,6 @@ function Duels() {
           </div>
         </div>
       </div>
-      {/* </div> */}
-      {/* </div> */}
     </div>
   );
 }
