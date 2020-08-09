@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import DropdownButton from "./DropdownButton";
+import MessageDropDown from './MessageDropDown.js'
 function Header() {
   return (
     <div>
@@ -17,6 +18,7 @@ function Header() {
         <Link className="navbutton" to="/leaderboards">
           Leaderboards
         </Link>
+        <MessageDropDown />
         <DropdownButton />
       </div>
       <div className="boxx-search-div">

@@ -26,7 +26,7 @@ div#viewport {
   height: 9rem;
 }
 
-.boxx-details .header-flex{
+.boxx-details .header-flex {
   position: absolute;
   right: 0.5px;
 }
@@ -142,13 +142,13 @@ input:focus {
   top: 40%;
 }
 
-#box3{
+#box3 {
   position: absolute;
   top: 100%;
   left: 28.2%;
 }
 
-#box4{
+#box4 {
   position: absolute;
   top: 100%;
   right: 30%;
@@ -170,7 +170,7 @@ input:focus {
   left: 83%;
 }
 
-.duel-profile-comment{
+.duel-profile-comment {
   width: 25px;
   height: 25px;
   margin-top: 50px;
@@ -220,7 +220,7 @@ input:focus {
   background-color: rgba(77, 73, 73, 0.1);
 }
 
-.prompt p{
+.prompt p {
   margin-left: 10px;
 }
 
@@ -247,7 +247,7 @@ input:focus {
   right: 320%;
 }
 
-.single-duel-comment p{
+.single-duel-comment p {
   position: relative;
   bottom: 10px !important;
 }
@@ -464,6 +464,7 @@ input:focus {
   margin-left: 10px;
   padding-left: 35px;
 }
+
 .userposition {
   margin-bottom: 20px;
 }
@@ -489,10 +490,12 @@ input:focus {
   top: 300px;
   left: 20%;
 }
+
 .followbutton {
   position: absolute;
   right: 0%;
 }
+
 .userinfo {
   position: absolute;
   font-size: medium;
@@ -500,6 +503,7 @@ input:focus {
   top: 10%;
   text-align: left;
 }
+
 .usericon {
   position: absolute;
   left: 10%;
@@ -507,6 +511,7 @@ input:focus {
   border: solid black 1px;
   border-radius: 100%;
 }
+
 .profile-pic {
   width: 60px;
   height: 60px;
@@ -517,6 +522,7 @@ input:focus {
   left: 12%;
   top: 35%;
 }
+
 .dropdowns {
   float: left;
 }
@@ -567,10 +573,12 @@ input:focus {
   background-color: transparent;
   border: solid, 0.5px, black;
 }
+
 .item_image {
   height: 50px;
   width: 50px;
 }
+
 .picker_item {
   position: absolute;
   top: 45%;
@@ -586,6 +594,7 @@ input:focus {
   top: 20%;
   text-align: center;
 }
+
 .login_panel {
   position: absolute;
   top: 100px;
@@ -594,6 +603,7 @@ input:focus {
   flex-direction: column;
   text-align: center;
 }
+
 .login_logo {
   width: 25rem;
   height: 9rem;
@@ -725,6 +735,7 @@ input:focus {
   height: 40px;
   border: 1px black solid;
 }
+
 .switch_btn {
   background-color: transparent;
   color: black;
@@ -739,6 +750,7 @@ input:focus {
   top: 300px;
   font-size: large;
 }
+
 .filteritem {
   margin-bottom: 10px;
 }
@@ -864,17 +876,17 @@ input:focus {
   /* margin: auto 0; */
 }
 
-.product-img{
+.product-img {
   width: 200px;
   height: 200px
 }
 
-.boxx_info{
+.boxx_info {
   margin-top: 55%;
   margin-right: 25%;
 }
 
-.boxx_info div{
+.boxx_info div {
   margin-top: 5px;
 }
 
@@ -904,14 +916,14 @@ input:focus {
 
 @media only screen and (max-width: 1000px) {
 
-.duels .boxx-container{
-  width: 250px;
-  height: 250px;
-}
+  .duels .boxx-container {
+    width: 250px;
+    height: 250px;
+  }
 
-.duels .boxx-array{
-  grid-template-columns: repeat(2);
-}
+  .duels .boxx-array {
+    grid-template-columns: repeat(2);
+  }
 
   .duels .boxx {
     width: 200px;
@@ -963,4 +975,11 @@ input:focus {
     display: grid;
     grid-template-columns: repeat(1, 20vw);
   }
+}
+
+/* Chat dropdown CSS */
+
+.header-message-icon {
+  height: 40px;
+  width: 40px;
 }

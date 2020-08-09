@@ -10,12 +10,13 @@ class DropdownButton extends Component {
   render() {
     return (
       <div>
-      <div className="login_option">
-      <Link to="/login">Login</Link>
-      <Link to="/login">Sign Up</Link>
-    </div>
-      <Link className="nav_user_btn" to="/profile">
-      </Link>
+        <div className="login_option">
+          <Link to="/login">Login</Link>
+          <Link to="/login">Sign Up</Link>
+        </div>
+
+        <Link className="nav_user_btn" to="/profile">
+        </Link>
       </div>
     );
   }
