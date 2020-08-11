@@ -963,6 +963,59 @@ input:focus {
   background-color: white;
 }
 
+.bracket-division1{
+  margin-top: 200px;
+  margin-left: 27%;
+}
+
+.brackets{
+  display: flex;
+  flex-direction: row;
+}
+
+.bracket-division1 div{
+  width: 100px;
+  height: 40px;
+  border: solid black 1px;
+  margin-top: 30px;
+}
+
+.bracket-division2{
+  margin-top: 250px;
+  margin-left: 10%;
+}
+
+.bracket-division2 div{
+  width: 100px;
+  height: 40px;
+  border: solid black 1px;
+  margin-top: 70px;
+}
+
+.bracket-division3{
+  margin-top: 360px;
+  margin-left: 10%;
+}
+
+.bracket-division3 div{
+  width: 100px;
+  height: 40px;
+  border: solid black 1px;
+  margin-top: 70px;
+}
+
+.bracket-division4{
+  margin-top: 410px;
+  margin-left: 10%;
+}
+
+.bracket-division4 div{
+  width: 100px;
+  height: 40px;
+  border: solid black 1px;
+  margin-top: 70px;
+}
+
 
 
 @media only screen and (max-width: 1430px) {

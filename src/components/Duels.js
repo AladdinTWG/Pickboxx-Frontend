@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "./Header.js";
+import { Link } from "react-router-dom";
 
 function Duels() {
   return (
@@ -11,11 +12,13 @@ function Duels() {
           src="https://www.greenecountyfoundation.org/wp-content/uploads/2019/09/Profile-Icon.png"
           alt=""
         />
-        <img
-          className="bracket-icon"
-          src="https://icon-library.com/images/tournament-icon/tournament-icon-9.jpg"
-          alt=""
-        />
+        <Link to="/Brackets">
+          <img
+            className="bracket-icon"
+            src="https://icon-library.com/images/tournament-icon/tournament-icon-9.jpg"
+            alt=""
+          />
+        </Link>
         <input className="duel-checkbox" type="checkbox" />
       </div>
       <div className="boxx" id="box2">
@@ -24,39 +27,41 @@ function Duels() {
           src="https://www.greenecountyfoundation.org/wp-content/uploads/2019/09/Profile-Icon.png"
           alt=""
         />
-        <img
-          className="bracket-icon-mirror"
-          src="https://icon-library.com/images/tournament-icon/tournament-icon-9.jpg"
-          alt=""
-        />
+        <Link to="/Brackets">
+          <img
+            className="bracket-icon-mirror"
+            src="https://icon-library.com/images/tournament-icon/tournament-icon-9.jpg"
+            alt=""
+          />
+        </Link>
         <input className="duel-checkbox-mirror" type="checkbox" />
         <div className="prompt">
           <p>Check a side to lead them to victory!</p>
         </div>
         <div className="duel-comments2">
           <div className="single-duel-comment">
-          <img
-            className="duel-profile-comment"
-            src="https://www.greenecountyfoundation.org/wp-content/uploads/2019/09/Profile-Icon.png"
-            alt=""
-          />
-          <p>Generic comment</p>
+            <img
+              className="duel-profile-comment"
+              src="https://www.greenecountyfoundation.org/wp-content/uploads/2019/09/Profile-Icon.png"
+              alt=""
+            />
+            <p>Generic comment</p>
           </div>
           <div className="single-duel-comment">
-          <img
-            className="duel-profile-comment"
-            src="https://www.greenecountyfoundation.org/wp-content/uploads/2019/09/Profile-Icon.png"
-            alt=""
-          />
-          <p>Generic comment</p>
+            <img
+              className="duel-profile-comment"
+              src="https://www.greenecountyfoundation.org/wp-content/uploads/2019/09/Profile-Icon.png"
+              alt=""
+            />
+            <p>Generic comment</p>
           </div>
           <div className="single-duel-comment">
-          <img
-            className="duel-profile-comment"
-            src="https://www.greenecountyfoundation.org/wp-content/uploads/2019/09/Profile-Icon.png"
-            alt=""
-          />
-          <p>Generic comment</p>
+            <img
+              className="duel-profile-comment"
+              src="https://www.greenecountyfoundation.org/wp-content/uploads/2019/09/Profile-Icon.png"
+              alt=""
+            />
+            <p>Generic comment</p>
           </div>
         </div>
       </div>
@@ -66,11 +71,13 @@ function Duels() {
           src="https://www.greenecountyfoundation.org/wp-content/uploads/2019/09/Profile-Icon.png"
           alt=""
         />
-        <img
-          className="bracket-icon"
-          src="https://icon-library.com/images/tournament-icon/tournament-icon-9.jpg"
-          alt=""
-        />
+        <Link to="/brackets">
+          <img
+            className="bracket-icon"
+            src="https://icon-library.com/images/tournament-icon/tournament-icon-9.jpg"
+            alt=""
+          />
+        </Link>
         <input className="duel-checkbox" type="checkbox" />
       </div>
       <div className="boxx" id="box4">
@@ -79,39 +86,41 @@ function Duels() {
           src="https://www.greenecountyfoundation.org/wp-content/uploads/2019/09/Profile-Icon.png"
           alt=""
         />
-        <img
-          className="bracket-icon-mirror"
-          src="https://icon-library.com/images/tournament-icon/tournament-icon-9.jpg"
-          alt=""
-        />
+        <Link to="/Brackets">
+          <img
+            className="bracket-icon-mirror"
+            src="https://icon-library.com/images/tournament-icon/tournament-icon-9.jpg"
+            alt=""
+          />
+        </Link>
         <input className="duel-checkbox-mirror" type="checkbox" />
         <div className="prompt">
           <p>Check a side to lead them to victory!</p>
         </div>
         <div className="duel-comments2">
           <div className="single-duel-comment">
-          <img
-            className="duel-profile-comment"
-            src="https://www.greenecountyfoundation.org/wp-content/uploads/2019/09/Profile-Icon.png"
-            alt=""
-          />
-          <p>Generic comment</p>
+            <img
+              className="duel-profile-comment"
+              src="https://www.greenecountyfoundation.org/wp-content/uploads/2019/09/Profile-Icon.png"
+              alt=""
+            />
+            <p>Generic comment</p>
           </div>
           <div className="single-duel-comment">
-          <img
-            className="duel-profile-comment"
-            src="https://www.greenecountyfoundation.org/wp-content/uploads/2019/09/Profile-Icon.png"
-            alt=""
-          />
-          <p>Generic comment</p>
+            <img
+              className="duel-profile-comment"
+              src="https://www.greenecountyfoundation.org/wp-content/uploads/2019/09/Profile-Icon.png"
+              alt=""
+            />
+            <p>Generic comment</p>
           </div>
           <div className="single-duel-comment">
-          <img
-            className="duel-profile-comment"
-            src="https://www.greenecountyfoundation.org/wp-content/uploads/2019/09/Profile-Icon.png"
-            alt=""
-          />
-          <p>Generic comment</p>
+            <img
+              className="duel-profile-comment"
+              src="https://www.greenecountyfoundation.org/wp-content/uploads/2019/09/Profile-Icon.png"
+              alt=""
+            />
+            <p>Generic comment</p>
           </div>
         </div>
       </div>
