@@ -15,6 +15,12 @@ function Brackets() {
       <div className="player7"></div>
       <div className="player8"></div>
     </div>
+    <div className="bracket-lines">
+    <div className="bracket-line" id="bl1"></div>
+    <div className="bracket-line" id="bl2"></div>
+    <div className="bracket-line" id="bl3"></div>
+    <div className="bracket-line" id="bl4"></div>
+    </div>
     <div className="bracket-division2">
     <div className="semi1"></div>
     <div className="semi2"></div>
