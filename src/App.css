@@ -953,7 +953,7 @@ input:focus {
   border: none;
   font-size: 1.5rem;
   font-weight: bold;
-  box-shadow: 5px 5px 15px;
+  border: solid black 1px;
 }
 
 .join-now:hover{
@@ -965,9 +965,24 @@ input:focus {
   margin-left: 27%;
 }
 
+.prizes{
+  position: absolute;
+  top: 230px;
+  left: 420px;
+  display: flex;
+  flex-direction: row;
+}
+
+.prizes .prize-img{
+  width: 50px;
+  height: 50px;
+  margin-right: 150px;
+}
+
 .brackets{
   display: flex;
   flex-direction: row;
+  margin-top: 100px;
 }
 
 .bracket-division1 div{
@@ -1013,14 +1028,229 @@ input:focus {
   margin-top: 70px;
 }
 
+.player-profile{
+  width: 40px;
+  height: 40px;
+  margin-left: 30px;
+}
+
 #bl1{
   position: absolute;
-  top: 250px;
+  top: 370px;
   width: 60px;
   height: 70px;
   border-top: solid black 1px;
   border-right: solid black 1px;
   border-bottom: solid black 1px;
+}
+
+#bl2{
+  position: absolute;
+  top: 510px;
+  width: 60px;
+  height: 70px;
+  border-top: solid black 1px;
+  border-right: solid black 1px;
+  border-bottom: solid black 1px;
+}
+
+#bl3{
+  position: absolute;
+  top: 660px;
+  width: 60px;
+  height: 70px;
+  border-top: solid black 1px;
+  border-right: solid black 1px;
+  border-bottom: solid black 1px;
+}
+
+#bl4{
+  position: absolute;
+  top: 800px;
+  width: 60px;
+  height: 70px;
+  border-top: solid black 1px;
+  border-right: solid black 1px;
+  border-bottom: solid black 1px;
+}
+
+#bl5{
+  position: absolute;
+  width: 40px;
+  left: 551px;
+  top: 405px;
+  border-top: solid black 1px;
+}
+
+#bl6{
+  position: absolute;
+  width: 40px;
+  left: 551px;
+  top: 550px;
+  border-top: solid black 1px;
+}
+
+#bl7{
+  position: absolute;
+  width: 40px;
+  left: 551px;
+  top: 695px;
+  border-top: solid black 1px;
+}
+
+#bl8{
+  position: absolute;
+  width: 40px;
+  left: 551px;
+  top: 840px;
+  border-top: solid black 1px;
+}
+
+#bl9{
+  position: absolute;
+  top: 410px;
+  left: 692px;
+  width: 60px;
+  height: 140px;
+  border-top: solid black 1px;
+  border-right: solid black 1px;
+  border-bottom: solid black 1px;
+}
+
+#bl10{
+  position: absolute;
+  top: 695px;
+  left: 692px;
+  width: 60px;
+  height: 140px;
+  border-top: solid black 1px;
+  border-right: solid black 1px;
+  border-bottom: solid black 1px;
+}
+
+#bl11{
+  position: absolute;
+  width: 41px;
+  top: 490px;
+  left: 752px;
+  border-top: solid black 1px;
+}
+
+#bl12{
+  position: absolute;
+  width: 41px;
+  top: 760px;
+  left: 752px;
+  border-top: solid black 1px;
+}
+
+#bl13{
+  position: absolute;
+  border-top: solid black 1px;
+  border-right: solid black 1px;
+  border-bottom: solid black 1px;
+  height: 270px;
+  width: 60px;
+  top: 490px;
+  left: 895px;
+}
+
+#bl14{
+  position: absolute;
+  border-top: solid black 1px;
+  width: 41px;
+  top: 620px;
+  left: 955px;
+}
+
+#user1{
+  position: absolute;
+  bottom: 65px;
+  left: 5px;
+}
+
+#user2{
+  position: absolute;
+  top: 65px;
+  left: 5px;
+}
+
+#user3{
+  position: absolute;
+  top: 65px;
+  left: 5px;
+}
+
+#user4{
+  position: absolute;
+  bottom: 65px;
+  left: 5px;
+}
+
+#user5{
+  position: absolute;
+  top: 65px;
+  left: 5px;
+}
+
+#user6{
+  position: absolute;
+  bottom: 65px;
+  left: 5px;
+}
+
+#user7{
+  position: absolute;
+  top: 65px;
+  left: 5px;
+}
+
+#user8{
+  position: absolute;
+  bottom: 65px;
+  left: 5px;
+}
+
+#user9{
+  position: absolute;
+  top: 140px;
+  left: 150px;
+}
+
+#user10{
+  position: absolute;
+  bottom: -10px;
+  left: 150px;
+}
+
+#user11{
+  position: absolute;
+  top: 280px;
+  left: 150px;
+}
+
+#user12{
+  position: absolute;
+  bottom: -150px;
+  left: 150px;
+}
+
+#user13{
+  position: absolute;
+  top: 265px;
+  left: 5px;
+}
+
+#user14{
+  position: absolute;
+  left: 5px;
+  bottom: 265px;
+}
+
+#user15{
+  position: absolute;
+  left: 1110px;
+  bottom: 155px;
 }
 
 

@@ -6,7 +6,7 @@ function Header() {
     <div>
       <div className="header-flex">
         <img className="pickboxx-logo" src={"../Logo.jpeg"} alt="" />
-        <Link className="navbutton" to="/">
+        <Link className="navbutton" to="/home">
           Home
         </Link>
         <Link className="navbutton" to="/explore">
