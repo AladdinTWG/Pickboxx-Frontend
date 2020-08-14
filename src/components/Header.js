@@ -18,7 +18,7 @@ function Header() {
         <Link className="navbutton" to="/leaderboards">
           Leaderboards
         </Link>
-        <MessageDropDown />
+        {/* <MessageDropDown /> */}
         <DropdownButton />
       </div>
       <div className="boxx-search-div">
