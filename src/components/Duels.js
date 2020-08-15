@@ -6,6 +6,7 @@ function Duels() {
   return (
     <div className="duels">
       <Header />
+      <div className="duel-container1">
       <div className="boxx" id="box1">
         <img
           className="duel-profile"
@@ -65,6 +66,8 @@ function Duels() {
           </div>
         </div>
       </div>
+      </div>
+      <div className="duel-container2">
       <div className="boxx" id="box3">
         <img
           className="duel-profile"
@@ -123,6 +126,7 @@ function Duels() {
             <p>Generic comment</p>
           </div>
         </div>
+      </div>
       </div>
     </div>
   );

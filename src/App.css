@@ -610,6 +610,10 @@ input:focus {
   left: 90%;
 }
 
+.nav_user_btn{
+  margin-right: 20px;
+}
+
 .login_option a {
   font-size: 1.3rem;
 }
@@ -1248,17 +1252,82 @@ input:focus {
 }
 
 #user15{
-  position: absolute;
-  left: 1110px;
-  bottom: 155px;
+  position: relative;
+  left: 110px;
+  bottom: 40px;
 }
 
+.duel-container2{
+  position: relative;
+  top: 800px;
+}
+
+.header-message-icon {
+  height: 25px;
+  width: 25px;
+  position: relative;
+  display: inline;
+  border: none;
+}
+
+.header-message-icon:hover {
+  cursor: pointer;
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  background-color: rgb(202, 202, 202);
+  width: 300px;
+  z-index: 4;
+  max-height: 80vh;
+  position: absolute;
+  top: 100px;
+  left: 1000px;
+  overflow-x: scroll;
+}
+
+.chat-message {
+  display: flex;
+  border: 1px solid black;
+  margin: 10px;
+  padding: 10px;
+  padding-left: 10px;
+}
+
+.chat-message-profile-pic-div {
+  border: 1px solid black;
+  border-radius: 25px;
+  margin-right: 10px;
+  height: 50px;
+  width: 50px;
+}
+
+.chat-message-profile-pic-img {
+  height: 100%;
+  width: 100%;
+  border-radius: 25px;
+}
+
+.dropdown-toggle-chat {
+  border: none;
+  position: relative;
+  right: 18px;
+}
+
+
+.chat-img{
+  width: 50px;
+  height: 50px;
+  margin-top: 25px;
+}
 
 
 @media only screen and (max-width: 1430px) {
   .duels .boxx {
-    width: 250px;
-    height: 250px;
+    width: 297px;
+    height: 297px;
   }
 
   .box1{
