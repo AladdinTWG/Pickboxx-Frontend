@@ -5,6 +5,7 @@ import { Route, Link } from "react-router-dom";
 import ProfilePhotosVideosSection from "./ProfilePhotosVideosSection.js";
 import ProfileBoxxesSection from "./ProfileBoxxesSection.js";
 import DropdownButton from "./DropdownButton.js";
+import Header from "./Header.js";
 
 class Container extends Component {
   constructor() {
@@ -14,21 +15,7 @@ class Container extends Component {
   render() {
     return (
       <div className="profile-container">
-          <div className="header-flex">
-          <img className="pickboxx-logo" src={"../Logo.jpeg"} alt="" />
-        <Link className="navbutton" to="/">
-          Home
-        </Link>
-        <Link className="navbutton" to="/explore">
-          Explore
-        </Link>
-        <Link className="navbutton" to="/marketplace">Marketplace</Link>
-        <Link className="navbutton">Map</Link>
-        <Link className="navbutton" to="/leaderboards">
-          Leaderboards
-        </Link>
-        <DropdownButton />
-        </div>
+          <Header />
         <ProfileInfo />
         <ProfileNavBar />
         <Route

@@ -4,29 +4,14 @@ import DropdownButton from "./DropdownButton";
 import Filter from "./Filter";
 import ButtonGroup from "react-bootstrap/ButtonGroup";
 import Button from "react-bootstrap/Button";
+import Header from "./Header.js";
 
 class MarketPlace extends Component {
   state = {};
   render() {
     return (
       <div>
-        <div className="header-flex">
-          <img className="pickboxx-logo" src={"../Logo.jpeg"} alt="" />
-          <Link className="navbutton" to="/">
-            Home
-          </Link>
-          <Link className="navbutton" to="/explore">
-            Explore
-          </Link>
-          <Link className="navbutton" to="/marketplace">
-            Marketplace
-          </Link>
-          <Link className="navbutton">Map</Link>
-          <Link className="navbutton" to="/leaderboards">
-            Leaderboards
-          </Link>
-          <DropdownButton />
-        </div>
+        <Header/>
         <div className="boxx-search-div">
           <input className="boxx-search" type="text"></input>
           <div className="boxx-nav"></div>
