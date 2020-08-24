@@ -26,7 +26,7 @@ div#viewport {
   height: 9rem;
 }
 
-.boxx-details .header-flex{
+.boxx-details .header-flex {
   position: absolute;
   right: 0.5px;
 }
@@ -142,13 +142,13 @@ input:focus {
   top: 40%;
 }
 
-#box3{
+#box3 {
   position: absolute;
   top: 100%;
   left: 28.2%;
 }
 
-#box4{
+#box4 {
   position: absolute;
   top: 100%;
   right: 30%;
@@ -170,12 +170,11 @@ input:focus {
   left: 83%;
 }
 
-.duel-profile-comment{
+.duel-profile-comment {
   width: 25px;
   height: 25px;
   margin-top: 50px;
 }
-
 
 .bracket-icon {
   width: 30px;
@@ -220,7 +219,7 @@ input:focus {
   background-color: rgba(77, 73, 73, 0.1);
 }
 
-.prompt p{
+.prompt p {
   margin-left: 10px;
 }
 
@@ -247,11 +246,10 @@ input:focus {
   right: 320%;
 }
 
-.single-duel-comment p{
+.single-duel-comment p {
   position: relative;
   bottom: 10px !important;
 }
-
 
 .duel-comment-p {
   position: absolute;
@@ -610,7 +608,7 @@ input:focus {
   left: 90%;
 }
 
-.nav_user_btn{
+.nav_user_btn {
   margin-right: 20px;
 }
 
@@ -754,7 +752,6 @@ input:focus {
   grid-template-columns: 1fr 1fr;
 }
 
-
 .profile-picture {
   margin: 10px auto;
   margin-top: 100px;
@@ -801,7 +798,7 @@ input:focus {
   border-left: 1px solid black;
 }
 
-.profile-photo-video-boxx-buttons>div {
+.profile-photo-video-boxx-buttons > div {
   width: 100%;
   /* border: 1px solid black; */
 }
@@ -853,7 +850,7 @@ input:focus {
   border: 1px solid black;
 }
 
-.photo-video-item-image>img {
+.photo-video-item-image > img {
   height: 100%;
   width: 100%;
 }
@@ -868,89 +865,149 @@ input:focus {
   /* margin: auto 0; */
 }
 
-.product-img{
+.product-img {
   width: 200px;
-  height: 200px
+  height: 200px;
 }
 
-.boxx_info{
+.boxx_info {
   margin-top: 55%;
   margin-right: 25%;
 }
 
-.boxx_info div{
+.boxx_info div {
   margin-top: 5px;
 }
 
-.landing-page{
+.landing-page {
   text-align: center;
+  /* background-image: linear-gradient(to right bottom, rgba(50, 200, 255, 0.7), rgba(255, 255, 255)); */
 }
 
-.info-container{
+.left-div{
+  z-index: -1;
+  background-color: #4fc5e1;
+  width: 49.2vw;
+  height: 120vh;
+  position: absolute;
+}
+
+.right-div{
+  z-index: -1;
+  background-color: #555;
+  width: 51vw;
+  height: 120vh;
+  position: absolute;
+  left: 49%;
+}
+
+.slogan{
+  color: white;
+}
+
+.info-container {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
 }
 
-.info-container div{
+.info-container div {
   width: 420px;
 }
 
-.info1{
-  border-right: solid black 1px;
+.info1 {
+  border-right: solid white 1px;
   padding-right: 40px;
+  color: white;
 }
 
-.sell{
+.sell {
+  color: white;
   font-size: 4rem;
 }
 
-.info1 p{
+.info1 p {
   font-size: 1.5rem;
+  color: white;
 }
 
-.info2{
-  border-right: solid black 1px;
+.info2 {
+  border-right: solid white 1px;
   padding-right: 40px;
+  color: white;
 }
 
-.info2 p{
+.info2 p {
   font-size: 1.5rem;
+  color: white;
 }
 
-.info3 p{
+.info3 p {
   font-size: 1.5rem;
+  color: white;
 }
 
-.demo-container{
+.demo-container {
   margin-top: 50px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
 
-.demo1{
+.demo1 {
   height: 300px;
   width: 300px;
 }
 
-.demo2{
+.demo2 {
   height: 300px;
   width: 300px;
 }
 
-.demo3{
+.demo3 {
   height: 300px;
   width: 300px;
 }
 
-.demo-img{
+.demo1 .demo-img {
+  border: solid black 1px;
+  border-radius: 20px;
+}
+
+.demo2 .demo-img {
+  border: solid black 1px;
+  border-radius: 20px;
+}
+
+.demo3 .demo-img {
+  border: solid black 1px;
+  border-radius: 20px;
+}
+
+.demo-img {
   height: 500px;
   width: 300px;
-} 
+}
 
-.join-now{
+.join{
+  color: white;
+  width: 100px;
+  background-color: #666;
+  padding-top: 4px;
+  padding-bottom: 6px;
+  padding-left: 45px;
+  font-size: 2.5rem;
+}
+
+.now{
+  font-size: 2.5rem;
+  padding-right: 80px;
+}
+
+.join-now {
+  padding: 0;
   margin-top: 250px;
+  margin-right: 25px;
   width: 200px;
   height: 40px;
   background-color: #4fc5e1;
@@ -958,18 +1015,29 @@ input:focus {
   font-size: 1.5rem;
   font-weight: bold;
   border: solid black 1px;
+  /* border-radius: 10px; */
 }
 
-.join-now:hover{
-  background-color: white;
+.join-now:focus{
+  outline: 0;
 }
 
-.bracket-division1{
+.join-now:hover {
+  transform: translateY(-5px);
+  box-shadow: 5px 5px 15px;
+}
+
+.join-now:active{
+  transform: translateY(3px);
+  box-shadow: none;
+}
+
+.bracket-division1 {
   margin-top: 200px;
   margin-left: 27%;
 }
 
-.prizes{
+.prizes {
   position: absolute;
   top: 230px;
   left: 420px;
@@ -977,68 +1045,68 @@ input:focus {
   flex-direction: row;
 }
 
-.prizes .prize-img{
+.prizes .prize-img {
   width: 50px;
   height: 50px;
   margin-right: 150px;
 }
 
-.brackets{
+.brackets {
   display: flex;
   flex-direction: row;
   margin-top: 100px;
 }
 
-.bracket-division1 div{
+.bracket-division1 div {
   width: 100px;
   height: 40px;
   border: solid black 1px;
   margin-top: 30px;
 }
 
-.bracket-division2{
+.bracket-division2 {
   margin-left: 100px;
   margin-top: 170px;
 }
 
-.bracket-division2 div{
+.bracket-division2 div {
   width: 100px;
   height: 40px;
   border: solid black 1px;
   margin-top: 100px;
 }
 
-.bracket-division3{
+.bracket-division3 {
   margin-top: 120px;
   margin-left: 100px;
 }
 
-.bracket-division3 div{
+.bracket-division3 div {
   width: 100px;
   height: 40px;
   border: solid black 1px;
   margin-top: 230px;
 }
 
-.bracket-division4{
+.bracket-division4 {
   margin-top: 410px;
   margin-left: 100px;
 }
 
-.bracket-division4 div{
+.bracket-division4 div {
   width: 100px;
   height: 40px;
   border: solid black 1px;
   margin-top: 70px;
 }
 
-.player-profile{
+.player-profile {
   width: 40px;
   height: 40px;
   margin-left: 30px;
 }
 
-#bl1{
+#bl1 {
   position: absolute;
   top: 370px;
   width: 60px;
@@ -1048,7 +1116,7 @@ input:focus {
   border-bottom: solid black 1px;
 }
 
-#bl2{
+#bl2 {
   position: absolute;
   top: 510px;
   width: 60px;
@@ -1058,7 +1126,7 @@ input:focus {
   border-bottom: solid black 1px;
 }
 
-#bl3{
+#bl3 {
   position: absolute;
   top: 660px;
   width: 60px;
@@ -1068,7 +1136,7 @@ input:focus {
   border-bottom: solid black 1px;
 }
 
-#bl4{
+#bl4 {
   position: absolute;
   top: 800px;
   width: 60px;
@@ -1078,7 +1146,7 @@ input:focus {
   border-bottom: solid black 1px;
 }
 
-#bl5{
+#bl5 {
   position: absolute;
   width: 40px;
   left: 551px;
@@ -1086,7 +1154,7 @@ input:focus {
   border-top: solid black 1px;
 }
 
-#bl6{
+#bl6 {
   position: absolute;
   width: 40px;
   left: 551px;
@@ -1094,7 +1162,7 @@ input:focus {
   border-top: solid black 1px;
 }
 
-#bl7{
+#bl7 {
   position: absolute;
   width: 40px;
   left: 551px;
@@ -1102,7 +1170,7 @@ input:focus {
   border-top: solid black 1px;
 }
 
-#bl8{
+#bl8 {
   position: absolute;
   width: 40px;
   left: 551px;
@@ -1110,7 +1178,7 @@ input:focus {
   border-top: solid black 1px;
 }
 
-#bl9{
+#bl9 {
   position: absolute;
   top: 410px;
   left: 692px;
@@ -1121,7 +1189,7 @@ input:focus {
   border-bottom: solid black 1px;
 }
 
-#bl10{
+#bl10 {
   position: absolute;
   top: 695px;
   left: 692px;
@@ -1132,7 +1200,7 @@ input:focus {
   border-bottom: solid black 1px;
 }
 
-#bl11{
+#bl11 {
   position: absolute;
   width: 41px;
   top: 490px;
@@ -1140,7 +1208,7 @@ input:focus {
   border-top: solid black 1px;
 }
 
-#bl12{
+#bl12 {
   position: absolute;
   width: 41px;
   top: 760px;
@@ -1148,7 +1216,7 @@ input:focus {
   border-top: solid black 1px;
 }
 
-#bl13{
+#bl13 {
   position: absolute;
   border-top: solid black 1px;
   border-right: solid black 1px;
@@ -1159,7 +1227,7 @@ input:focus {
   left: 895px;
 }
 
-#bl14{
+#bl14 {
   position: absolute;
   border-top: solid black 1px;
   width: 41px;
@@ -1167,97 +1235,97 @@ input:focus {
   left: 955px;
 }
 
-#user1{
+#user1 {
   position: absolute;
   bottom: 65px;
   left: 5px;
 }
 
-#user2{
+#user2 {
   position: absolute;
   top: 65px;
   left: 5px;
 }
 
-#user3{
+#user3 {
   position: absolute;
   top: 65px;
   left: 5px;
 }
 
-#user4{
+#user4 {
   position: absolute;
   bottom: 65px;
   left: 5px;
 }
 
-#user5{
+#user5 {
   position: absolute;
   top: 65px;
   left: 5px;
 }
 
-#user6{
+#user6 {
   position: absolute;
   bottom: 65px;
   left: 5px;
 }
 
-#user7{
+#user7 {
   position: absolute;
   top: 65px;
   left: 5px;
 }
 
-#user8{
+#user8 {
   position: absolute;
   bottom: 65px;
   left: 5px;
 }
 
-#user9{
+#user9 {
   position: absolute;
   top: 140px;
   left: 150px;
 }
 
-#user10{
+#user10 {
   position: absolute;
   bottom: -10px;
   left: 150px;
 }
 
-#user11{
+#user11 {
   position: absolute;
   top: 280px;
   left: 150px;
 }
 
-#user12{
+#user12 {
   position: absolute;
   bottom: -150px;
   left: 150px;
 }
 
-#user13{
+#user13 {
   position: absolute;
   top: 265px;
   left: 5px;
 }
 
-#user14{
+#user14 {
   position: absolute;
   left: 5px;
   bottom: 265px;
 }
 
-#user15{
+#user15 {
   position: relative;
   left: 110px;
   bottom: 40px;
 }
 
-.duel-container2{
+.duel-container2 {
   position: relative;
   top: 800px;
 }
@@ -1316,13 +1384,93 @@ input:focus {
   right: 18px;
 }
 
-
-.chat-img{
+.chat-img {
   width: 50px;
   height: 50px;
   margin-top: 25px;
 }
 
+.paymentMethod {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin-left: 35%;
+  margin-top: 10%;
+}
+
+.contact-info {
+  position: relative;
+  right: 250px;
+  top: 55px;
+}
+
+.paymentMethod input {
+  margin-top: 20px;
+}
+
+.subform1 input {
+  width: 217px;
+}
+
+.phone-number {
+  margin-left: 50px;
+}
+
+.shipping-info {
+  position: relative;
+  right: 250px;
+  top: 55px;
+}
+
+.subform2 input {
+  width: 217px;
+}
+
+.country {
+  margin-left: 50px;
+}
+
+.zip {
+  margin-left: 50px;
+}
+
+.pay-info {
+  position: relative;
+  right: 250px;
+  top: 55px;
+}
+
+.subform3 input {
+  width: 217px;
+}
+
+.cvc {
+  margin-left: 50px;
+}
+
+.checkbox-prompt {
+  position: relative;
+  left: 30px;
+  bottom: 25px;
+}
+
+.subform4 {
+  transform: translateY(90px);
+}
+
+.subform4 input {
+  width: 217px;
+  transform: translateY(-90px);
+}
+
+.confirm {
+  margin-left: 150px;
+  margin-top: 50px;
+  width: 170px;
+  height: 30px;
+  background-color: #4fc5e1;
+  border: none;
+}
 
 @media only screen and (max-width: 1430px) {
   .duels .boxx {
@@ -1330,7 +1478,7 @@ input:focus {
     height: 297px;
   }
 
-  .box1{
+  .box1 {
     width: 400px;
     height: 400px;
   }
@@ -1352,13 +1500,12 @@ input:focus {
 }
 
 @media only screen and (max-width: 1000px) {
-
-/* .duels .boxx-container{
+  /* .duels .boxx-container{
   width: 400px;
   height: 400px;
 } */
 
-/* .duels .boxx-array{
+  /* .duels .boxx-array{
   grid-template-columns: repeat(2);
 } */
 

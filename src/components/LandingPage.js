@@ -4,7 +4,9 @@ import {Link} from "react-router-dom";
 function LandingPage() {
   return (
     <div className="landing-page">
-      <img className="pickboxx-logo" src={"../Logo.jpeg"} alt="" />
+      <div className="left-div"></div>
+      <div className="right-div"></div>
+      <img className="pickboxx-logo" src="https://lh3.googleusercontent.com/-zC-44BJGQN0/X0P1r5IgJgI/AAAAAAAAADE/MYtrI683VHA88mQ_fsKMN5TfPVpHamMCACK8BGAsYHg/s512/pickboxx-logo%2Btransparent.png" alt="" />
       <h1 className="slogan">Sell it. Buy it. Sell it.</h1>
       <div className="info-container">
       <div className="info1">
@@ -22,17 +24,17 @@ function LandingPage() {
       </div>
       <div className="demo-container">
         <div className="demo1">
-        <img className="demo-img" src={"../ListingSummaryPage.png"}/>
+        <img className="demo-img" src={"../Screen Shot 2020-08-21 at 8.02.52 PM.png"}/>
         </div>
         <div className="demo2">
-        <img className="demo-img" src={"../ShoppingBagPage.png"}/>
+        <img className="demo-img" src={"../Screen Shot 2020-08-21 at 8.06.41 PM.png"}/>
         </div>
         <div className="demo3">
-        <img className="demo-img" src={"../LocalLeaderboardPage.png"}/>
+        <img className="demo-img" src={"../Screen Shot 2020-08-21 at 7.58.09 PM.png"}/>
         </div>
       </div>
       <Link to="/login">
-      <button className="join-now">Join Now</button>
+      <button className="join-now"><span className="join">Join</span><span className="now">Now</span></button>
       </Link>
     </div>
   );

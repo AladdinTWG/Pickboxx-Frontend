@@ -14,6 +14,7 @@ import Marketplace from "./components/Marketplace.js";
 import Container from "./components/Container.js";
 import LandingPage from "./components/LandingPage.js";
 import Brackets from "./components/Brackets.js";
+import PaymentMethod from "./components/PaymentMethod.js";
 
 class App extends Component {
   constructor(props) {
@@ -62,6 +63,9 @@ class App extends Component {
         </Route>
         <Route exact path="/brackets">
         <Brackets/>
+        </Route>
+        <Route exact path="/payment-method">
+        <PaymentMethod/>
         </Route>
       </div>
     );
