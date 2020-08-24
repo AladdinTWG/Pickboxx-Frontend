@@ -7,7 +7,7 @@ import BoxxDetails from "./components/BoxxDetails.js";
 import Explore from "./components/Explore.js";
 import Leaderboards from "./components/Leaderboards.js";
 import Duels from "./components/Duels.js";
-import SomethingPopular from "./components/SomethingPopular.js"
+import SomethingPopular from "./components/SomethingPopular.js";
 import TopPickerPage from "./components/TopPickerPage.js";
 import Login from "./components/Login.js";
 import Marketplace from "./components/Marketplace.js";
@@ -26,7 +26,7 @@ class App extends Component {
     return (
       <div className="App">
         <Route exact path="/">
-        <LandingPage/>
+          <LandingPage />
         </Route>
         <Route exact path="/home">
           <Home />
@@ -35,16 +35,16 @@ class App extends Component {
           <Explore />
         </Route>
         <Route exact path="/leaderboards">
-          <Leaderboards/>
+          <Leaderboards />
         </Route>
         <Route exact path="/topboxxes">
           <TopBoxxes />
         </Route>
         <Route exact path="/somethingPopular">
-          <SomethingPopular/>
+          <SomethingPopular />
         </Route>
         <Route exact path="/duels">
-        <Duels/>
+          <Duels />
         </Route>
         <Route exact path="/BoxxDetails">
           <BoxxDetails />
@@ -53,19 +53,19 @@ class App extends Component {
           <TopPickerPage />
         </Route>
         <Route exact path="/login">
-          <Login/>
+          <Login />
         </Route>
         <Route exact path="/marketplace">
-        <Marketplace/>
+          <Marketplace />
         </Route>
         <Route exact path="/profile">
-        <Container/>
+          <Container />
         </Route>
         <Route exact path="/brackets">
-        <Brackets/>
+          <Brackets />
         </Route>
         <Route exact path="/payment-method">
-        <PaymentMethod/>
+          <PaymentMethod />
         </Route>
       </div>
     );

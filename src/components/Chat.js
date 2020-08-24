@@ -83,7 +83,7 @@ class Chat extends Component {
   render() {
     return (
       <div className="chat">
-        <img className="chat-img" src="https://static.vecteezy.com/system/resources/previews/000/422/741/non_2x/vector-chat-icon.jpg" alt="" onClick={this.chatClicked}/>
+        <img className="chat-img" src={"../hiclipart.com.png"} alt="" onClick={this.chatClicked}/>
         {this.state.clicked &&
         <div class="chat-container">
           {" "}

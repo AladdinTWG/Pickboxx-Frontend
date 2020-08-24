@@ -24,7 +24,7 @@ class LoginPage extends Component {
     return (
       <div className="login_panel">
         <div>
-          <img className="login_logo" src={"../Logo.jpeg"} alt="" />
+          <img className="login_logo" src="https://lh3.googleusercontent.com/-zC-44BJGQN0/X0P1r5IgJgI/AAAAAAAAADE/MYtrI683VHA88mQ_fsKMN5TfPVpHamMCACK8BGAsYHg/s512/pickboxx-logo%2Btransparent.png" alt="" />
         </div>
 
         <form>
@@ -54,7 +54,7 @@ class LoginPage extends Component {
         </form>
         <span className="line">
           <h3>
-            <span>Or Sign Up Using</span>
+            <span></span><span className="or-sign">Or Sign</span> <span className="up-using"> Up Using</span>
           </h3>
         </span>
 

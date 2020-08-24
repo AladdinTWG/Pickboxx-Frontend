@@ -7,6 +7,8 @@ body {
   height: 100%;
   width: 100%;
   overflow: auto;
+  /* background: url(./Background.png); */
+  background-size: cover;
 }
 
 body {
@@ -24,6 +26,10 @@ div#viewport {
 .pickboxx-logo {
   width: 25rem;
   height: 9rem;
+}
+
+.header{
+  color:
 }
 
 .boxx-details .header-flex {
@@ -67,13 +73,12 @@ div#viewport {
 
 .boxx-search-div {
   padding: 10px 0 10px 0;
-  display: block;
 }
 
 .boxx-search {
   position: absolute;
   top: 100px;
-  left: 33.2%;
+  left: 31%;
   width: 500px;
   height: 30px;
   border-radius: 50px;
@@ -93,7 +98,7 @@ input:focus {
 .boxx-nav {
   position: absolute;
   top: 150px;
-  left: 33.7%;
+  left: 32.3%;
   display: flex;
   flex-direction: row;
   text-align: center;
@@ -659,10 +664,20 @@ input:focus {
 }
 
 .line h3 span {
-  background-color: white;
   position: relative;
   top: 5px;
+  right: 5px;
   padding: 0 9px;
+  line-height: 0;
+  padding: 0;
+}
+
+.or-sign{
+  background-color: #4fc5e1;
+}
+
+.up-using{
+  background-color: #555;
 }
 
 .options-text {
@@ -990,18 +1005,19 @@ input:focus {
 }
 
 .join{
-  color: white;
   width: 100px;
   background-color: #666;
-  padding-top: 4px;
-  padding-bottom: 6px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   padding-left: 45px;
   font-size: 2.5rem;
+  color: #4fc5e1
 }
 
 .now{
   font-size: 2.5rem;
   padding-right: 80px;
+  color: #666;
 }
 
 .join-now {
@@ -1388,6 +1404,7 @@ input:focus {
   width: 50px;
   height: 50px;
   margin-top: 25px;
+  /* background-color: #555; */
 }
 
 .paymentMethod {

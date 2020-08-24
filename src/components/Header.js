@@ -5,9 +5,9 @@ import Chat from "./Chat.js";
 
 function Header() {
   return (
-    <div>
+    <div className="header">
       <div className="header-flex">
-        <img className="pickboxx-logo" src={"../Logo.jpeg"} alt="" />
+        <img className="pickboxx-logo" src="https://lh3.googleusercontent.com/-zC-44BJGQN0/X0P1r5IgJgI/AAAAAAAAADE/MYtrI683VHA88mQ_fsKMN5TfPVpHamMCACK8BGAsYHg/s512/pickboxx-logo%2Btransparent.png" alt="" />
         <Link className="navbutton" to="/home">
           Home
         </Link>
