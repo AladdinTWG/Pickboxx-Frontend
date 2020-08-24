@@ -13,18 +13,24 @@ import Login from "./components/Login.js";
 import Marketplace from "./components/Marketplace.js";
 import Container from "./components/Container.js";
 import LandingPage from "./components/LandingPage.js";
+import Brackets from "./components/Brackets.js";
+import marketplaceProductInfo from './components/MarketplaceProductInfo.jsx'
+import MarketplaceProductInfo from "./components/MarketplaceProductInfo.jsx";
+
 
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      test1: 'string'
+    };
   }
 
   render() {
     return (
       <div className="App">
         <Route exact path="/">
-        <LandingPage/>
+          <LandingPage />
         </Route>
         <Route exact path="/home">
           <Home />
@@ -33,16 +39,16 @@ class App extends Component {
           <Explore />
         </Route>
         <Route exact path="/leaderboards">
-          <Leaderboards/>
+          <Leaderboards />
         </Route>
         <Route exact path="/topboxxes">
           <TopBoxxes />
         </Route>
         <Route exact path="/somethingPopular">
-          <SomethingPopular/>
+          <SomethingPopular />
         </Route>
         <Route exact path="/duels">
-        <Duels/>
+          <Duels />
         </Route>
         <Route exact path="/BoxxDetails">
           <BoxxDetails />
@@ -51,14 +57,22 @@ class App extends Component {
           <TopPickerPage />
         </Route>
         <Route exact path="/login">
-          <Login/>
+          <Login />
         </Route>
         <Route exact path="/marketplace">
-        <Marketplace/>
+          <Marketplace />
         </Route>
         <Route exact path="/profile">
-        <Container/>
+          <Container />
         </Route>
+        <Route exact path="/brackets">
+          <Brackets />
+        </Route>
+        <Route exact path="/marketplace/products/:name/:id" render={routerProps =>
+          <MarketplaceProductInfo testString={this.state.test1} {...routerProps} />} />
+
+
+
       </div>
     );
   }

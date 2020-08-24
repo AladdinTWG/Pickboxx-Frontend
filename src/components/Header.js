@@ -1,13 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import DropdownButton from "./DropdownButton";
-import MessageDropDown from './MessageDropDown.js'
+import Chat from "./Chat.js";
+
 function Header() {
   return (
     <div>
       <div className="header-flex">
         <img className="pickboxx-logo" src={"../Logo.jpeg"} alt="" />
-        <Link className="navbutton" to="/">
+        <Link className="navbutton" to="/home">
           Home
         </Link>
         <Link className="navbutton" to="/explore">
@@ -18,7 +19,7 @@ function Header() {
         <Link className="navbutton" to="/leaderboards">
           Leaderboards
         </Link>
-        {/* <MessageDropDown /> */}
+        <Chat />
         <DropdownButton />
       </div>
       <div className="boxx-search-div">

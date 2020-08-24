@@ -276,15 +276,15 @@ input:focus {
 }
 
 .boxx-container {
-  width: 400px;
-  height: 400px;
+  width: 500px;
+  height: 550px;
 }
 
 .boxx {
   border: solid black 1px;
-  position: absolute;
-  width: 300px;
-  height: 300px;
+  /* position: absolute; */
+  width: 100%;
+  height: 100%;
 }
 
 .boxx-mirror {
@@ -620,6 +620,10 @@ input:focus {
   left: 90%;
 }
 
+.nav_user_btn {
+  margin-right: 20px;
+}
+
 .login_option a {
   font-size: 1.3rem;
 }
@@ -729,8 +733,8 @@ input:focus {
 
 .switch {
   position: absolute;
-  top: 20%;
-  left: 42%;
+  top: 30%;
+  left: 43.5%;
   width: 200px;
   height: 40px;
   border: 1px black solid;
@@ -756,7 +760,6 @@ input:focus {
 }
 
 .profile-info-container {
-  border: 1px solid black;
   width: 100%;
   height: 330px;
   display: grid;
@@ -775,7 +778,7 @@ input:focus {
 .profile-username {
   position: absolute;
   left: 22%;
-  top: 36%;
+  top: 38%;
 }
 
 /*.profile-pic-and-name-section,
@@ -791,7 +794,7 @@ input:focus {
 
 .profile-stats-section {
   grid-column: 2/3;
-  margin-top: 100px;
+  margin-top: 150px;
 }
 
 .profile-stat-item {
@@ -801,6 +804,7 @@ input:focus {
 }
 
 .profile-photo-video-boxx-buttons {
+  border-top: solid black 1px;
   display: flex;
   grid-column: 1/3;
   justify-content: space-around;
@@ -882,8 +886,9 @@ input:focus {
 }
 
 .boxx_info {
-  margin-top: 55%;
-  margin-right: 25%;
+  display: block;
+  /* margin-top: 55%; */
+  /* margin-right: 25%; */
 }
 
 .boxx_info div {
@@ -940,47 +945,402 @@ input:focus {
 .demo1 {
   height: 300px;
   width: 300px;
-  box-shadow: 5px 5px 15px;
 }
 
 .demo2 {
   height: 300px;
   width: 300px;
-  box-shadow: 5px 5px 15px;
 }
 
 .demo3 {
   height: 300px;
   width: 300px;
-  box-shadow: 5px 5px 15px;
 }
 
 .demo-img {
-  height: 300px;
+  height: 500px;
   width: 300px;
 }
 
 .join-now {
-  margin-top: 50px;
+  margin-top: 250px;
   width: 200px;
   height: 40px;
   background-color: #4fc5e1;
   border: none;
   font-size: 1.5rem;
   font-weight: bold;
-  box-shadow: 5px 5px 15px;
+  border: solid black 1px;
 }
 
 .join-now:hover {
   background-color: white;
 }
 
+.bracket-division1 {
+  margin-top: 200px;
+  margin-left: 27%;
+}
+
+.prizes {
+  position: absolute;
+  top: 230px;
+  left: 420px;
+  display: flex;
+  flex-direction: row;
+}
+
+.prizes .prize-img {
+  width: 50px;
+  height: 50px;
+  margin-right: 150px;
+}
+
+.brackets {
+  display: flex;
+  flex-direction: row;
+  margin-top: 100px;
+}
+
+.bracket-division1 div {
+  width: 100px;
+  height: 40px;
+  border: solid black 1px;
+  margin-top: 30px;
+}
+
+.bracket-division2 {
+  margin-left: 100px;
+  margin-top: 170px;
+}
+
+.bracket-division2 div {
+  width: 100px;
+  height: 40px;
+  border: solid black 1px;
+  margin-top: 100px;
+}
+
+.bracket-division3 {
+  margin-top: 120px;
+  margin-left: 100px;
+}
+
+.bracket-division3 div {
+  width: 100px;
+  height: 40px;
+  border: solid black 1px;
+  margin-top: 230px;
+}
+
+.bracket-division4 {
+  margin-top: 410px;
+  margin-left: 100px;
+}
+
+.bracket-division4 div {
+  width: 100px;
+  height: 40px;
+  border: solid black 1px;
+  margin-top: 70px;
+}
+
+.player-profile {
+  width: 40px;
+  height: 40px;
+  margin-left: 30px;
+}
+
+#bl1 {
+  position: absolute;
+  top: 370px;
+  width: 60px;
+  height: 70px;
+  border-top: solid black 1px;
+  border-right: solid black 1px;
+  border-bottom: solid black 1px;
+}
+
+#bl2 {
+  position: absolute;
+  top: 510px;
+  width: 60px;
+  height: 70px;
+  border-top: solid black 1px;
+  border-right: solid black 1px;
+  border-bottom: solid black 1px;
+}
+
+#bl3 {
+  position: absolute;
+  top: 660px;
+  width: 60px;
+  height: 70px;
+  border-top: solid black 1px;
+  border-right: solid black 1px;
+  border-bottom: solid black 1px;
+}
+
+#bl4 {
+  position: absolute;
+  top: 800px;
+  width: 60px;
+  height: 70px;
+  border-top: solid black 1px;
+  border-right: solid black 1px;
+  border-bottom: solid black 1px;
+}
+
+#bl5 {
+  position: absolute;
+  width: 40px;
+  left: 551px;
+  top: 405px;
+  border-top: solid black 1px;
+}
+
+#bl6 {
+  position: absolute;
+  width: 40px;
+  left: 551px;
+  top: 550px;
+  border-top: solid black 1px;
+}
+
+#bl7 {
+  position: absolute;
+  width: 40px;
+  left: 551px;
+  top: 695px;
+  border-top: solid black 1px;
+}
+
+#bl8 {
+  position: absolute;
+  width: 40px;
+  left: 551px;
+  top: 840px;
+  border-top: solid black 1px;
+}
+
+#bl9 {
+  position: absolute;
+  top: 410px;
+  left: 692px;
+  width: 60px;
+  height: 140px;
+  border-top: solid black 1px;
+  border-right: solid black 1px;
+  border-bottom: solid black 1px;
+}
+
+#bl10 {
+  position: absolute;
+  top: 695px;
+  left: 692px;
+  width: 60px;
+  height: 140px;
+  border-top: solid black 1px;
+  border-right: solid black 1px;
+  border-bottom: solid black 1px;
+}
+
+#bl11 {
+  position: absolute;
+  width: 41px;
+  top: 490px;
+  left: 752px;
+  border-top: solid black 1px;
+}
+
+#bl12 {
+  position: absolute;
+  width: 41px;
+  top: 760px;
+  left: 752px;
+  border-top: solid black 1px;
+}
+
+#bl13 {
+  position: absolute;
+  border-top: solid black 1px;
+  border-right: solid black 1px;
+  border-bottom: solid black 1px;
+  height: 270px;
+  width: 60px;
+  top: 490px;
+  left: 895px;
+}
+
+#bl14 {
+  position: absolute;
+  border-top: solid black 1px;
+  width: 41px;
+  top: 620px;
+  left: 955px;
+}
+
+#user1 {
+  position: absolute;
+  bottom: 65px;
+  left: 5px;
+}
+
+#user2 {
+  position: absolute;
+  top: 65px;
+  left: 5px;
+}
+
+#user3 {
+  position: absolute;
+  top: 65px;
+  left: 5px;
+}
+
+#user4 {
+  position: absolute;
+  bottom: 65px;
+  left: 5px;
+}
+
+#user5 {
+  position: absolute;
+  top: 65px;
+  left: 5px;
+}
+
+#user6 {
+  position: absolute;
+  bottom: 65px;
+  left: 5px;
+}
+
+#user7 {
+  position: absolute;
+  top: 65px;
+  left: 5px;
+}
+
+#user8 {
+  position: absolute;
+  bottom: 65px;
+  left: 5px;
+}
+
+#user9 {
+  position: absolute;
+  top: 140px;
+  left: 150px;
+}
+
+#user10 {
+  position: absolute;
+  bottom: -10px;
+  left: 150px;
+}
+
+#user11 {
+  position: absolute;
+  top: 280px;
+  left: 150px;
+}
+
+#user12 {
+  position: absolute;
+  bottom: -150px;
+  left: 150px;
+}
+
+#user13 {
+  position: absolute;
+  top: 265px;
+  left: 5px;
+}
+
+#user14 {
+  position: absolute;
+  left: 5px;
+  bottom: 265px;
+}
+
+#user15 {
+  position: relative;
+  left: 110px;
+  bottom: 40px;
+}
+
+.duel-container2 {
+  position: relative;
+  top: 800px;
+}
+
+.header-message-icon {
+  height: 25px;
+  width: 25px;
+  position: relative;
+  display: inline;
+  border: none;
+}
+
+.header-message-icon:hover {
+  cursor: pointer;
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  background-color: rgb(202, 202, 202);
+  width: 300px;
+  z-index: 4;
+  max-height: 80vh;
+  position: absolute;
+  top: 100px;
+  left: 1000px;
+  overflow-x: scroll;
+}
+
+.chat-message {
+  display: flex;
+  border: 1px solid black;
+  margin: 10px;
+  padding: 10px;
+  padding-left: 10px;
+}
+
+.chat-message-profile-pic-div {
+  border: 1px solid black;
+  border-radius: 25px;
+  margin-right: 10px;
+  height: 50px;
+  width: 50px;
+}
+
+.chat-message-profile-pic-img {
+  height: 100%;
+  width: 100%;
+  border-radius: 25px;
+}
+
+.dropdown-toggle-chat {
+  border: none;
+  position: relative;
+  right: 18px;
+}
+
+
+.chat-img {
+  width: 50px;
+  height: 50px;
+  margin-top: 25px;
+}
 
 
 @media only screen and (max-width: 1430px) {
   .duels .boxx {
-    width: 250px;
-    height: 250px;
+    width: 297px;
+    height: 297px;
   }
 
   .box1 {
@@ -1121,4 +1481,97 @@ input:focus {
   border: none;
   position: relative;
   right: 18px;
+}
+
+/* product info page css */
+
+.product-info-link {
+  display: block;
+}
+
+.product-info-page-main {
+  width: 100%;
+  min-height: 1000px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+}
+
+.pipm-first-container {
+  display: flex;
+}
+
+.product-info-page-main-img {
+  border: 1px solid black;
+  margin: 105px;
+  height: 280px;
+  width: 280px;
+}
+
+.product-info-page-main-description {
+  width: 50%;
+  font-size: 1.6em;
+  margin: 0 auto;
+}
+
+.product-info-page-main-info {
+  max-height: 600px;
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.product-info-page-main-price-container {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.6em;
+  margin: 0 auto;
+  width: 40%;
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.marketplace-buynow-button {
+  background-color: white;
+  border: black solid 1px;
+  padding: 13px;
+}
+
+.marketplace-select-location {
+  height: 80%;
+  align-self: flex-end;
+}
+
+.marketplace-related-products {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid black;
+}
+
+.related-product-image {
+  height: 80px;
+  width: 80px;
+}
+
+.marketplace-related-products-item {
+  border: 1px solid black;
+  text-align: center;
+}
+
+.customer-reviews-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  /* flex-direction: column; */
+}
+
+.customer-reviews-item {
+  text-align: center;
+  margin-top: 25px;
+  height: 180px;
+  width: 40%;
+  border: 1px solid black;
 }

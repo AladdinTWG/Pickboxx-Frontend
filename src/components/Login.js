@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import FacebookLoginWithButton from "react-facebook-login";
 import GoogleLogin from "react-google-login";
 import TwitterLogin from "react-twitter-login";
+import {Link} from "react-router-dom";
 
 const responseFacebook = (response) => {
   console.log(response);
@@ -42,13 +43,14 @@ class LoginPage extends Component {
               size="33"
             ></input>
           </div>
-
+          <Link to ="/home">
           <button
             className="username_input"
             style={{ backgroundColor: "#33ccff" }}
           >
             Login
           </button>
+          </Link>
         </form>
         <span className="line">
           <h3>
