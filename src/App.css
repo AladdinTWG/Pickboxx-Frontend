@@ -664,6 +664,7 @@ input:focus {
 }
 
 .line h3 span {
+  background-color: white;
   position: relative;
   top: 5px;
   right: 5px;
@@ -672,13 +673,13 @@ input:focus {
   padding: 0;
 }
 
-.or-sign{
+/* .or-sign{
   background-color: #4fc5e1;
 }
 
 .up-using{
   background-color: #555;
-}
+} */
 
 .options-text {
   background-color: white;
@@ -1487,6 +1488,103 @@ input:focus {
   height: 30px;
   background-color: #4fc5e1;
   border: none;
+}
+
+/* product info page css */
+
+.marketplace-product-info-page-container{
+  margin-top: 100px;
+}
+
+.product-info-link {
+  display: block;
+}
+
+.product-info-page-main {
+  width: 100%;
+  min-height: 1000px;
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+}
+
+.pipm-first-container {
+  display: flex;
+}
+
+.product-info-page-main-img {
+  border: 1px solid black;
+  margin: 105px;
+  height: 280px;
+  width: 280px;
+}
+
+.product-info-page-main-description {
+  width: 50%;
+  font-size: 1.6em;
+  margin: 0 auto;
+}
+
+.product-info-page-main-info {
+  max-height: 600px;
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.product-info-page-main-price-container {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.6em;
+  margin: 0 auto;
+  width: 40%;
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.marketplace-buynow-button {
+  background-color: white;
+  border: black solid 1px;
+  padding: 13px;
+}
+
+.marketplace-select-location {
+  height: 80%;
+  align-self: flex-end;
+}
+
+.marketplace-related-products {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid black;
+}
+
+.related-product-image {
+  height: 80px;
+  width: 80px;
+}
+
+.marketplace-related-products-item {
+  border: 1px solid black;
+  text-align: center;
+}
+
+.customer-reviews-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  /* flex-direction: column; */
+}
+
+.customer-reviews-item {
+  text-align: center;
+  margin-top: 25px;
+  height: 180px;
+  width: 40%;
+  border: 1px solid black;
 }
 
 @media only screen and (max-width: 1430px) {

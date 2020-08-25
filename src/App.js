@@ -15,11 +15,15 @@ import Container from "./components/Container.js";
 import LandingPage from "./components/LandingPage.js";
 import Brackets from "./components/Brackets.js";
 import PaymentMethod from "./components/PaymentMethod.js";
+import MarketplaceProductInfo from "./components/MarketPlaceProductInfo";
+import Map from "./components/Map.js";
 
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      test1: "string"
+    };
   }
 
   render() {
@@ -66,6 +70,11 @@ class App extends Component {
         </Route>
         <Route exact path="/payment-method">
           <PaymentMethod />
+        </Route>
+        <Route exact path="/marketplace/products" render={routerProps =>
+          <MarketplaceProductInfo testString={this.state.test1} {...routerProps} />} />
+          <Route exact path="/map">
+          <Map />
         </Route>
       </div>
     );
