@@ -22,7 +22,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      test1: 'string'
+      currentProduct: 'string'
     };
   }
 
@@ -69,7 +69,7 @@ class App extends Component {
           <Brackets />
         </Route>
         <Route exact path="/marketplace/products/:name/:id" render={routerProps =>
-          <MarketplaceProductInfo testString={this.state.test1} {...routerProps} />} />
+          <MarketplaceProductInfo testString={this.state.currentProduct} {...routerProps} />} />
 
 
 

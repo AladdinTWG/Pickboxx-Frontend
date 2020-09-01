@@ -41,65 +41,78 @@ class MarketplaceProductInfo extends Component {
           description: 'Good mouse'
         }
       ],
-      reviews: ['akes it the perfect bottle for you adventures, commutes and everyday hydration', 'akes it the perfect bottle for you adventures, commutes and everyday hydration', 'akes it the perfect bottle for you adventures, commutes and everyday hydration', 'akes it the perfect bottle for you adventures, commutes and everyday hydration', 'akes it the perfect bottle for you adventures, commutes and everyday hydration', 'akes it the perfect bottle for you adventures, commutes and everyday hydration',]
+      reviews: ['akes it the perfect bottle for you adventures, commutes and everyday hydration', 'akes it the perfect bottle for you adventures, commutes and everyday hydration', 'akes it the perfect bottle for you adventures, commutes and everyday hydration', 'akes it the perfect bottle for you adventures, commutes and everyday hydration', 'akes it the perfect bottle for you adventures, commutes and everyday hydration', 'akes it the perfect bottle for you adventures, commutes and everyday hydration',],
+
+      currentProduct: 'string'
     }
   }
 
   cr = "strin"
 
-  componentDidMount() {
-    const { test1 } = this.props.location.state
+  componentDidMount = async () => {
+    const { currentProduct } = this.props.location.state
     this.setState(() => ({
-      test1
+      currentProduct
     }))
   }
 
   render() {
+    // console.log(this.state.currentProduct)
     return (
-      <div className='marketplace-product-info-page-container' >
-        {console.log(this.state)}
-        <h1>{this.state.test1}</h1>
-        <div className='product-info-page-main'>
-          <div className='pipm-first-container'>
-            <img src='https://img.pngio.com/box-png-images-free-download-png-box-2258_1747.png' className='product-info-page-main-img' />
-            <div className='product-info-page-main-info'>
-              <p className='product-info-page-main-description'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum optio error ad aliquid cupiditate et enim, veritatis natus, quo aperiam modi a assumenda neque delectus facilis amet voluptate quidem ut vel! Neque, reiciendis excepturi dolore nemo voluptates vitae animi, maxime eveniet explicabo doloribus, voluptate nam sunt laboriosam officiis suscipit fuga.</p>
-              <div className='product-info-page-main-price-container'>
-                <span>$$$</span>
-                <select className='marketplace-select-location'>
-                  <option>option one</option>
-                  <option>option two</option>
-                  <option>option three</option>
-                  <option>option four</option>
-                </select>
-                <button className='marketplace-buynow-button'>Buy Now</button>
+      <>
+        {
+          this.state.currentProduct !== undefined ?
+            // {console.log(this.state)}
+            <div className='marketplace-product-info-page-container' >
+              {/* {console.log(this.state)} */}
+
+              <div className='product-info-page-main'>
+                <div className='pipm-first-container'>
+                  <div className='product-info-page-main-img-container'>
+                    <img src={this.state.currentProduct.imageURL} className='product-info-page-main-img' />
+                    <h1>{this.state.currentProduct.productName}</h1>
+                  </div>
+                  <div className='product-info-page-main-info'>
+                    <p className='product-info-page-main-description'>{this.state.currentProduct.description}</p>
+                    <div className='product-info-page-main-price-container'>
+                      <span>{this.state.currentProduct.price}$</span>
+                      <select className='marketplace-select-location'>
+                        <option>option one</option>
+                        <option>option two</option>
+                        <option>option three</option>
+                        <option>option four</option>
+                      </select>
+                      <button className='marketplace-buynow-button'>Buy Now</button>
+                    </div>
+                  </div>
+                </div>
+
+
+                {/* Related products */}
+                <div className='marketplace-related-products'>
+                  {this.state.productListRelated.map(ele =>
+                    <div className='marketplace-related-products-item'>
+                      <img className='related-product-image' src={ele.imageURL} />
+                      <h2>{ele.productName}</h2>
+                      <p>{ele.price}</p>
+                      <p>{ele.location}</p>
+                    </div>
+                  )}
+                </div>
+
+                <div className='customer-reviews-container'>
+                  {this.state.reviews.map(ele =>
+                    <div className='customer-reviews-item'>
+                      <h2>Rating</h2>
+                      <p>{ele}</p>
+                    </div>
+                  )}
+                </div>
               </div>
             </div>
-          </div>
-
-
-          {/* Related products */}
-          <div className='marketplace-related-products'>
-            {this.state.productListRelated.map(ele =>
-              <div className='marketplace-related-products-item'>
-                <img className='related-product-image' src={ele.imageURL} />
-                <h2>{ele.productName}</h2>
-                <p>{ele.price}</p>
-                <p>{ele.location}</p>
-              </div>
-            )}
-          </div>
-
-          <div className='customer-reviews-container'>
-            {this.state.reviews.map(ele =>
-              <div className='customer-reviews-item'>
-                <h2>Rating</h2>
-                <p>{ele}</p>
-              </div>
-            )}
-          </div>
-        </div>
-      </div>
+            : <></>
+        }
+      </>
     );
   }
 }

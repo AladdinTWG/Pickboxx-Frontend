@@ -12,6 +12,7 @@ class MarketPlace extends Component {
       {
         imageURL: 'https://cdn.shopify.com/s/files/1/1571/0569/products/Gallery-Carry-On-Closet-Red-34_13285af5-000a-40cb-9513-1b4b6d23a79a_900x.png?v=1582913894',
         productName: 'The Carry-On Closet 2.0',
+        price: 12,
         stockAmount: 20,
         location: 'Macy\'s',
         productID: 123,
@@ -20,6 +21,7 @@ class MarketPlace extends Component {
       {
         imageURL: 'https://images-na.ssl-images-amazon.com/images/I/717-vZHlvdL._SL1500_.jpg',
         productName: 'Shampoo',
+        price: 42,
         stockAmount: 12,
         location: 'CVS',
         productID: 445,
@@ -28,6 +30,7 @@ class MarketPlace extends Component {
       {
         imageURL: 'https://www.wigglestatic.com/product-media/100482706/Camelbak-Chute-Mag-1L-Water-Bottles-Bluegrass-SS18-1513401001-7.jpg?w=430&h=430&a=7',
         productName: 'Camelback Reusable Water Bottle',
+        price: 91,
         stockAmount: 1,
         location: 'Target',
         productID: 191,
@@ -36,14 +39,25 @@ class MarketPlace extends Component {
       {
         imageURL: 'https://images-na.ssl-images-amazon.com/images/I/81A11OxpgXL._AC_SL1500_.jpg',
         productName: 'Deathadder Mouse',
+        price: 42,
         stockAmount: 1,
         location: 'Best Buy',
         productID: 624,
         description: 'Good mouse'
       }
     ],
-    currentProduct: "this product"
+    currentProduct: 'stringopwe'
   };
+
+  // handleClick = async (ele) => {
+  //   this.setState({
+  //     currentProduct: ele
+  //   })
+  // }
+
+
+
+
   render() {
     return (
       <div>
@@ -67,10 +81,15 @@ class MarketPlace extends Component {
             {
               this.state.productList.map(ele =>
                 <Link
+                  onClick={ele => {
+                    this.setState({
+                      currentProduct: ele
+                    })
+                  }}
                   className='boxx-container'
                   to={{
                     pathname: `/marketplace/products/${ele.productName}/${ele.productID}`,
-                    state: { test1: 'testw' }
+                    state: { currentProduct: ele }
                   }}>
                   <div className="boxx">
                     <img

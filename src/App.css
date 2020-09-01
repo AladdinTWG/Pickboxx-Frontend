@@ -452,14 +452,25 @@ input:focus {
 }
 
 .leaderboards {
-  margin-left: 20px;
+  margin: 0 auto;
   font-size: large;
-  width: 180px;
+  width: 80%;
   height: 690px;
   margin-top: 200px;
+  display: flex;
+  flex-direction: row;
 }
 
-.rank {
+.rank-24-hours {
+  border: solid black 1px;
+  margin-left: 10px;
+  padding-left: 35px;
+
+}
+
+.rank-column {
+  width: 20%;
+  height: 115%;
   border: solid black 1px;
   margin-left: 10px;
   padding-left: 35px;
@@ -467,6 +478,7 @@ input:focus {
 
 .userposition {
   margin-bottom: 20px;
+  width: 100%;
 }
 
 .full-leaderboard-link {
@@ -1504,14 +1516,24 @@ input:focus {
 .product-info-page-main-img {
   border: 1px solid black;
   margin: 105px;
+  margin-bottom: 0;
   height: 280px;
   width: 280px;
+}
+
+
+.product-info-page-main-img-container {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 100px;
+  align-items: center;
 }
 
 .product-info-page-main-description {
   width: 50%;
   font-size: 1.6em;
   margin: 0 auto;
+  padding: 50px;
 }
 
 .product-info-page-main-info {
@@ -1575,3 +1597,12 @@ input:focus {
   width: 40%;
   border: 1px solid black;
 }
+
+
+/* Leaderboard css */
+
+.leaderboard-toggle-button-container {
+  position: relative;
+}
+
+.leaderboard-toggle-button {}
