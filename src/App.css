@@ -28,8 +28,8 @@ div#viewport {
   height: 9rem;
 }
 
-.header{
-  color:
+.header {
+  z-index: 10;
 }
 
 .boxx-details .header-flex {
@@ -42,6 +42,7 @@ div#viewport {
   display: flex;
   justify-content: space-evenly;
   position: absolute;
+  top: 0;
   width: 100vw;
 }
 
@@ -447,19 +448,6 @@ input:focus {
   position: relative;
   /* bottom: 50px; */
   left: 15px;
-}
-
-.leaderboards-page {
-  display: flex;
-  flex-direction: row;
-}
-
-.leaderboards {
-  margin-left: 20px;
-  font-size: large;
-  width: 180px;
-  height: 690px;
-  margin-top: 200px;
 }
 
 .rank {
@@ -900,7 +888,7 @@ input:focus {
   /* background-image: linear-gradient(to right bottom, rgba(50, 200, 255, 0.7), rgba(255, 255, 255)); */
 }
 
-.left-div{
+.left-div {
   z-index: -1;
   background-color: #4fc5e1;
   width: 49.2vw;
@@ -908,7 +896,7 @@ input:focus {
   position: absolute;
 }
 
-.right-div{
+.right-div {
   z-index: -1;
   background-color: #555;
   width: 51vw;
@@ -917,7 +905,7 @@ input:focus {
   left: 49%;
 }
 
-.slogan{
+.slogan {
   color: white;
 }
 
@@ -1005,17 +993,17 @@ input:focus {
   width: 300px;
 }
 
-.join{
+.join {
   width: 100px;
   background-color: #666;
   padding-top: 5px;
   padding-bottom: 5px;
   padding-left: 45px;
   font-size: 2.5rem;
-  color: #4fc5e1
+  color: #4fc5e1;
 }
 
-.now{
+.now {
   font-size: 2.5rem;
   padding-right: 80px;
   color: #666;
@@ -1032,10 +1020,11 @@ input:focus {
   font-size: 1.5rem;
   font-weight: bold;
   border: solid black 1px;
+  transition: all 0.2s;
   /* border-radius: 10px; */
 }
 
-.join-now:focus{
+.join-now:focus {
   outline: 0;
 }
 
@@ -1044,7 +1033,7 @@ input:focus {
   box-shadow: 5px 5px 15px;
 }
 
-.join-now:active{
+.join-now:active {
   transform: translateY(3px);
   box-shadow: none;
 }
@@ -1351,6 +1340,7 @@ input:focus {
   height: 25px;
   width: 25px;
   position: relative;
+  top: 0;
   display: inline;
   border: none;
 }
@@ -1492,7 +1482,7 @@ input:focus {
 
 /* product info page css */
 
-.marketplace-product-info-page-container{
+.marketplace-product-info-page-container {
   margin-top: 100px;
 }
 
@@ -1541,25 +1531,41 @@ input:focus {
   width: 40%;
   margin-top: 20px;
   padding: 10px;
-  border: 1px solid black;
+}
+
+.price {
+  font-size: 2rem;
+  margin-top: 5px;
 }
 
 .marketplace-buynow-button {
   background-color: white;
   border: black solid 1px;
   padding: 13px;
+  height: 80%;
+  border-radius: 10px;
+}
+
+.marketplace-buynow-button:hover {
+  background-color: black;
+  color: blue;
+}
+
+.buy-span {
+  position: relative;
+  bottom: 5px;
 }
 
 .marketplace-select-location {
   height: 80%;
-  align-self: flex-end;
+  width: 150px;
+  /* align-self: flex-end; */
 }
 
 .marketplace-related-products {
   width: 100%;
   display: flex;
   justify-content: space-around;
-  border: 1px solid black;
 }
 
 .related-product-image {
@@ -1568,7 +1574,6 @@ input:focus {
 }
 
 .marketplace-related-products-item {
-  border: 1px solid black;
   text-align: center;
 }
 
@@ -1586,6 +1591,200 @@ input:focus {
   width: 40%;
   border: 1px solid black;
 }
+
+.map {
+  height: 120vh;
+}
+
+.map-div {
+  height: 80vh;
+  width: 80vw;
+  margin-top: 200px;
+  margin-left: 150px;
+}
+
+.rate {
+  margin-right: 35%;
+  height: 46px;
+  padding: 0 10px;
+}
+.rate:not(:checked) > input {
+  position: absolute;
+  top: -9999px;
+}
+.rate:not(:checked) > label {
+  float: right;
+  width: 1em;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 30px;
+  color: #ccc;
+}
+.rate:not(:checked) > label:before {
+  content: "★ ";
+}
+.rate > input:checked ~ label {
+  color: black;
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+  color: black;
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+  color: black;
+}
+
+/* Leaderboard css */
+
+.leaderboards-page-local {
+  background-color: salmon;
+  margin-top: 92px;
+  display: flex;
+  flex-direction: row;
+}
+
+.leaderboards-page-global{
+  background-color: skyblue;
+  margin-top: 92px;
+  display: flex;
+  flex-direction: row;
+}
+
+.leaderboards {
+  margin-left: 20px;
+  font-size: large;
+  width: 180px;
+  margin-top: 200px;
+}
+
+.leaderboard-toggle-button-container {
+  position: relative;
+  height: 10rem;
+  width: 30rem;
+  bottom: 25%;
+  left: 240%;
+}
+
+.leaderboard-toggle-local {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  position: absolute;
+  left: 30%;
+  top: 40%;
+  padding: 1rem 7rem;
+}
+
+.leaderboard-toggle-global {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  position: absolute;
+  left: 100%;
+  top: 40%;
+  padding: 1rem 7rem;
+}
+
+.leaderboard-toggle-local:hover,
+.leaderboard-toggle-global:hover {
+  background-color: rgba(77, 73, 73, 0.5);
+  padding: 1rem 7rem;
+  border-radius: 10rem;
+}
+
+.leaderboards-column-container .leaderboards-flex-column, .top3{
+  margin-top: 5rem;
+}
+
+.leaderboards-flex-row{
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: -17rem;
+}
+
+.leaderboards-flex-column{
+  border: solid black 2px;
+  width: 25rem;
+  height: 40rem;
+  background-color: white;
+}
+
+.user-info-and-score{
+  margin-top: -1.5rem !important;
+}
+
+.num1-local{
+  border: solid gold 4px;
+  height: 7rem;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.num2-local{
+  border: solid silver 4px;
+  height: 7rem;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.num3-local{
+  border: solid orange 4px;
+  height: 7rem;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.leaderboard-profile {
+  width: 5rem;
+  height: 5rem;
+  margin-top: 1rem;
+}
+
+.top10{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  border-bottom: solid black 1px;
+}
+
+.leaderboard-profile-top10{
+  width: 4rem;
+  height: 4rem;
+}
+
+.placement1{
+  color: gold;
+  font-size: 5rem;
+  margin-top: -0.05rem;
+}
+
+.placement2{
+  color: silver;
+  font-size: 5rem;
+  margin-top: -0.05rem;
+}
+
+.placement3{
+  color: orange;
+  font-size: 5rem;
+  margin-top: -0.05rem;
+}
+
+
 
 @media only screen and (max-width: 1430px) {
   .duels .boxx {
@@ -1637,6 +1836,11 @@ input:focus {
   .pickboxx-logo {
     width: 18rem;
     height: 6rem;
+  }
+
+  .header-flex {
+    background-color: white !important;
+    z-index: 10;
   }
 
   .header-flex a {

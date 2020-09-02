@@ -17,6 +17,8 @@ import Brackets from "./components/Brackets.js";
 import PaymentMethod from "./components/PaymentMethod.js";
 import MarketplaceProductInfo from "./components/MarketPlaceProductInfo";
 import Map from "./components/Map.js";
+import LeaderboardLocal from "./components/LeaderboardLocal.js";
+import LeaderboardGlobal from "./components/LeaderboardGlobal.js";
 
 class App extends Component {
   constructor(props) {
@@ -75,6 +77,12 @@ class App extends Component {
           <MarketplaceProductInfo testString={this.state.test1} {...routerProps} />} />
           <Route exact path="/map">
           <Map />
+        </Route>
+        <Route exact path="/leaderboards/local">
+          <LeaderboardLocal/>
+        </Route>
+        <Route exact path="/leaderboards/global">
+          <LeaderboardGlobal/>
         </Route>
       </div>
     );

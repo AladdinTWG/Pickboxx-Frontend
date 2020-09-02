@@ -16,7 +16,7 @@ function Header() {
         </Link>
         <Link className="navbutton" to="/marketplace">Marketplace</Link>
         <Link className="navbutton" to="/map">Map</Link>
-        <Link className="navbutton" to="/leaderboards">
+        <Link className="navbutton" to="/leaderboards/local">
           Leaderboards
         </Link>
         <Chat/>

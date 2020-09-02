@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Header from "./Header.js";
+import { Link } from "react-router-dom";
 
 class MarketplaceProductInfo extends Component {
   constructor(props) {
@@ -92,14 +93,18 @@ class MarketplaceProductInfo extends Component {
                   fuga.
                 </p>
                 <div className="product-info-page-main-price-container">
-                  <span>$$$</span>
+                  <span className="price">$$$</span>
                   <select className="marketplace-select-location">
                     <option>option one</option>
                     <option>option two</option>
                     <option>option three</option>
                     <option>option four</option>
                   </select>
-                  <button className="marketplace-buynow-button">Buy Now</button>
+                  <Link to="/payment-method">
+                    <button className="marketplace-buynow-button">
+                      <span className="buy-span">Buy Now</span>
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -121,6 +126,28 @@ class MarketplaceProductInfo extends Component {
                 <div className="customer-reviews-item">
                   <h2>Rating</h2>
                   <p>{ele}</p>
+                  <div class="rate">
+                    <input type="radio" id="star5" name="rate" value="5" />
+                    <label for="star5" title="text">
+                      5 stars
+                    </label>
+                    <input type="radio" id="star4" name="rate" value="4" />
+                    <label for="star4" title="text">
+                      4 stars
+                    </label>
+                    <input type="radio" id="star3" name="rate" value="3" />
+                    <label for="star3" title="text">
+                      3 stars
+                    </label>
+                    <input type="radio" id="star2" name="rate" value="2" />
+                    <label for="star2" title="text">
+                      2 stars
+                    </label>
+                    <input type="radio" id="star1" name="rate" value="1" />
+                    <label for="star1" title="text">
+                      1 star
+                    </label>
+                  </div>
                 </div>
               ))}
             </div>

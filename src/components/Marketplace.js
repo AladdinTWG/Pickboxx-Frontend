@@ -29,7 +29,7 @@ class MarketPlace extends Component {
           <div className="boxx-array">
             <div className="boxx-container">
               <div className="boxx">
-                <Link to="/payment-method" >
+                <Link to="/marketplace/products" >
                 <img
                   className="product-img"
                   src="https://cdn.shopify.com/s/files/1/1571/0569/products/Gallery-Carry-On-Closet-Red-34_13285af5-000a-40cb-9513-1b4b6d23a79a_900x.png?v=1582913894"

@@ -1,6 +1,6 @@
 import React, {Component} from "react";
-import Header from "./Header.js";
 import GoogleMapReact from "google-map-react";
+import Header from "./Header.js";
 
 const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
@@ -15,11 +15,11 @@ class Map extends Component {
 
   render() {
     return (
-      <div>
+      <div className="map">
         <Header />
-        <div style={{ height: "100vh", width: "100%" }}>
+        <div className="map-div">
           <GoogleMapReact
-            //   bootstrapURLKeys={{ key: /* YOUR KEY HERE */ }}
+            bootstrapURLKeys={{ key: "AIzaSyA2JZoiFSHpmlTNGNq_32yQjDMbsBhXcGI" }}
             defaultCenter={this.props.center}
             defaultZoom={this.props.zoom}
           >
